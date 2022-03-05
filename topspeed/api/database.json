@@ -1,0 +1,62 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "Madison",
+        "email": "Madison@me.com",
+        "password": "porsche911"
+      },
+      {
+        "id": 2,
+        "name": "Brian",
+        "email": "Brian@me.com",
+        "password": "nissan370z"
+      },
+      {
+        "id": 3,
+        "name": "Ryan",
+        "email": "Ryane@me.com",
+        "password": "bmw335i"
+      }
+
+    ],
+    "articles": [
+        {
+          "id": 1,
+          "url": "https://www.carthrottle.com/post/cargo-ship-carrying-porsches-lamborghinis-and-more-sinks-following-fire/",
+          "img": "https://images.cdn.circlesix.co/image/1/1366/0/uploads/posts/2022/03/c6761eda23e85283a5869cb979676dc8.jpeg",
+          "title": "Cargo Ship Carrying Porsches, Lamborghinis And More Sinks Following Fire",
+          "synopsis": "The stricken Felicity Ace sank in rough seas on Tuesday, taking around 4000 cars to the bottom of the Atlantic",
+          "date": "2022-03-02"
+        },
+        {
+            "id": 2,
+            "url": "https://www.motor1.com/news/571290/porsche-donate-million-ukraine-relief/",
+            "img": "https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/wp-content/uploads/2017/06/2018-Porsche-911-GT2-RS-102.jpg?crop=1.00xw:0.921xh;0,0.0341xh&resize=1200:*",
+            "title": "Porsche Is Latest Automaker To Donate €1 Million For Ukraine Relief",
+            "synopsis": "Porsche joins several automotive companies in donating funds for Ukrainian relief, pledging one million euros to the cause. That translates to approximately $1.1 million in US currency.",
+            "date": "2022-03-03"
+        }
+    ],
+    "forumPosts": [
+        {
+        "id": 1,
+        "userId": 1,
+        "title": "Cayenne engine making whining noise",
+        "carType": "Porsche",
+        "contents": "Hey everyone, my 2006 Cayenne is making a whining noise from the engine, any ideas on what it would be?",
+        "date": "2002-03-02",
+        "commentId": 1
+
+        }
+    ],
+    "postComments": [
+        {
+        "id": 1,
+        "userId": 2,
+        "content": "Is it the belt? Have you checked the oil?",
+        "postId": 1,
+        "date": "2022-03-04"
+        }
+    ]
+}
