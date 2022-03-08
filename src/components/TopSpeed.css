@@ -1,0 +1,54 @@
+* {
+    background-color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* HEADINGS ********** */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: maroon;
+  }
+  
+  .site__title {
+    color: #0D698B;
+    margin-top: 10%;
+    text-align: center;
+    
+  }
+  
+  .page__title {
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    color: maroon;
+  }
+  
+  /* LOGOS ********** */
+  .site__logo {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+  
+  /* LINKS ********** */
+  /* a {
+    color: #0D698B !important;
+  } */
+  
+  a:visited {
+    color: #050533;
+  }
+  
+  a:hover {
+    font-weight: bold;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
