@@ -19,12 +19,14 @@
       width: auto;
       height:15px;
       box-shadow: 5px 5px 10px darkgray;
+      opacity: 85%;
   }
 
 .spacer {
     background-color: black;
     width: auto;
-    height: 20px;
+    height: 17px;
+    box-shadow: 3px 3px 4px darkgray;
 }
 
 /* ARTCILES STYLING */
@@ -33,6 +35,7 @@
     width: auto;
     height: 220px;
     background-color: silver;
+    opacity: 70%;
 }
 
 .featured__articles {
