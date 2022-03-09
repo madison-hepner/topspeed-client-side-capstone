@@ -24,6 +24,7 @@ export const ForumList = () => {
   return (
     <>
     <h2 className="page__title">General Forum</h2>
+    <div className="spacer"></div>
 
       <div className="forumPost__card">
           {forumPosts.map(forumPost =>

@@ -4,13 +4,12 @@ import './Forum.css';
 import { useParams, useNavigate } from "react-router-dom"
 
 export const PostDetails = () => {
-  const [forumPost, setPost] = useState({ title: "", content: "", carType: "", date: ""});
+  const [forumPost, setPost] = useState({ title: "", content: "", carTypeId: "", date: ""});
 
   const {postId} = useParams();
   const navigate = useNavigate();
 
   useEffect(() => {
-    //getAnimalById(id) from AnimalManager and hang on to the data; put it into state
     console.log("useEffect", postId)
     getPostById(postId)
       .then(post => {

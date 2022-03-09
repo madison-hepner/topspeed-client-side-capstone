@@ -8,6 +8,7 @@ import { ForumList } from "./forum/ForumList"
 import { PostDetails } from "./forum/ForumPostDetails"
 
 
+
 export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
     const PrivateRoute = ({ children }) => {
       return isAuthenticated ? children : <Navigate to="/login" />;
@@ -40,7 +41,6 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
                     <PostDetails />
                 </PrivateRoute>
             } />
-
 
 
             </Routes>

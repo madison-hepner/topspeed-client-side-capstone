@@ -11,3 +11,49 @@
     background-color: transparent;
   }
 
+
+ /* SPACERS */
+
+.header__spacer {
+      background-color: black;
+      width: auto;
+      height:15px;
+      box-shadow: 5px 5px 10px darkgray;
+  }
+
+.spacer {
+    background-color: black;
+    width: auto;
+    height: 20px;
+}
+
+/* ARTCILES STYLING */
+
+.article__box {
+    width: auto;
+    height: 220px;
+    background-color: silver;
+}
+
+.featured__articles {
+      padding-top: 3em;
+  }
+
+.featured__header {
+    font-family: 'Audiowide', cursive;
+  }
+
+
+.articles__feature__spacer{
+    width:220px;
+    height: 8px;
+    background-color: black;
+}
+
+.grow { 
+    transition: all .09s ease-in-out; 
+    }
+
+.grow:hover { 
+    transform: scale(1.1); 
+    }

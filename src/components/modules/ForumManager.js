@@ -1,7 +1,7 @@
 const remoteURL = "http://localhost:8088"
 
 export const getPostById = (postId) => {
-  return fetch(`${remoteURL}/forumPosts/${postId}?_expand=user`)
+  return fetch(`${remoteURL}/forumPosts/${postId}?_expand=user&_expand=carType`)
   .then(res => res.json())
 }
 
