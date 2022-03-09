@@ -12,7 +12,7 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
   }
 
   return (
-    <nav className="navbar bg-dark text-white flex-md-nowrap p-0 shadow">
+    <nav className="navbar">
       <div className="navbar__background" >
         <picture className="navbar__background" >
            <img className="nav__logo" src={'/TopSpeed.png'} alt="Top Speed Logo" /> 

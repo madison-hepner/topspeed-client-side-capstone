@@ -33,12 +33,10 @@ ul {
     align-content: space-between;
 }
  
-/* .navbar-link {
-    background-color: #0D698B !important;
-    
-    margin-left: 15px;
-    margin-right: 15px;
-} */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
 
 .navbar__logout {
     line-height: 35px;
