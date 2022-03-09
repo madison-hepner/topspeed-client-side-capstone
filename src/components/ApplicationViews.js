@@ -5,6 +5,7 @@ import { TopSpeed } from "./TopSpeed"
 import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
 import { ForumList } from "./forum/ForumList"
+import { PostDetails } from "./forum/ForumPostDetails"
 
 
 export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
@@ -31,6 +32,12 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
             <Route exact path="/forum" element={
                 <PrivateRoute>
                     <ForumList />
+                </PrivateRoute>
+            } />
+
+            <Route exact path="/forum/:postId" element={
+                <PrivateRoute>
+                    <PostDetails />
                 </PrivateRoute>
             } />
 

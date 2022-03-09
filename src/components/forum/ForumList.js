@@ -1,11 +1,10 @@
 // FORUM POST LIST
-
 import React, { useState, useEffect } from 'react';
 import { GenForum } from './Forum';
 import { getAllPosts } from '../modules/ForumManager';
 import { useNavigate} from "react-router-dom"
 import "./Forum.css"
-import "./../TopSpeed.css"
+import "./ForumPostDetails"
 
 export const ForumList = () => {
   // The initial state is an empty array

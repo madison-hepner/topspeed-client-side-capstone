@@ -4,3 +4,10 @@
     color: maroon;
     padding: .5em;
   }
+
+  .page__logo {
+    height: 120px;
+    width: 240px;
+    background-color: transparent;
+  }
+

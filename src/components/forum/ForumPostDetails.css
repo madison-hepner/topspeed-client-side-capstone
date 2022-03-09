@@ -1,0 +1,8 @@
+.post__detail__link {
+    text-decoration: none;
+  }
+
+.post__detail__link:hover {
+    color: black !important;
+    text-decoration: underline;
+  }

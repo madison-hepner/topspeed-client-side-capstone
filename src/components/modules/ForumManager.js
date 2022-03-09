@@ -7,6 +7,6 @@ export const getPostById = (postId) => {
 }
 
 export const getAllPosts = () => {
-  return fetch(`${remoteURL}/forumPosts`)
+  return fetch(`${remoteURL}/forumPosts?_expand=user`)
   .then(res => res.json())
 }
