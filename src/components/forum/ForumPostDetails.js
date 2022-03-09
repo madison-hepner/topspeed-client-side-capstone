@@ -4,7 +4,7 @@ import './Forum.css';
 import { useParams, useNavigate } from "react-router-dom"
 
 export const PostDetails = () => {
-  const [forumPost, setPost] = useState({ title: "", content: "" });
+  const [forumPost, setPost] = useState({ title: "", content: "", carType: "", date: ""});
 
   const {postId} = useParams();
   const navigate = useNavigate();
@@ -25,7 +25,7 @@ export const PostDetails = () => {
             <h4><span className="forumPost__title">
               {forumPost.title}
             </span></h4>
-            <p><strong>Car Type:</strong> {forumPost.carType}</p>
+            <p><strong>Car Type:</strong> {forumPost.carType?.name}</p>
             <p> {forumPost.content}</p>
             <p>{forumPost.date}</p>
   

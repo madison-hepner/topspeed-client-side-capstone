@@ -6,11 +6,11 @@ export const getPostById = (postId) => {
 }
 
 export const getAllPosts = () => {
-  return fetch(`${remoteURL}/forumPosts?_expand=user`)
+  return fetch(`${remoteURL}/forumPosts?_expand=carType&_expand=user`)
   .then(res => res.json())
 }
 
-export const getForumByCarType = (carType) => {
-    return fetch(`${remoteURL}/forumPosts?_expand=user`)
+export const getForumByCarType = (carTypeId) => {
+    return fetch(`${remoteURL}/carTypes/${carTypeId}?_expand=name`)
     .then(res => res.json())
   }

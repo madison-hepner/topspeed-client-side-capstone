@@ -38,12 +38,22 @@
             "date": "2022-03-03"
         }
     ],
+    "carTypes": [
+        {
+            "id": 1,
+            "name": "Porsche"
+        },
+        {
+            "id": 2,
+            "name": "Nissan"
+        }
+    ],
     "forumPosts": [
         {
             "id": 1,
             "userId": 1,
             "title": "Cayenne engine making whining noise",
-            "carType": "Porsche",
+            "carTypeId": 1,
             "content": "Hey everyone, my 2006 Cayenne is making a whining noise from the engine, any ideas on what it would be?",
             "date": "2022-03-02",
             "commentId": 1
@@ -52,7 +62,7 @@
             "id": 2,
             "userId": 3,
             "title": "Should I buy reps or are the others worth it?",
-            "carType": "Nissan",
+            "carTypeId": 2,
             "content": "In my opinion, reps still look clean and obviously they're not as expensive. Are the others worth it though? Not sure about dropping 5k on rims...",
             "date": "2022-03-07",
             "commentId": 1
@@ -61,7 +71,7 @@
             "id": 3,
             "userId": 2,
             "title": "Taycan production delays?",
-            "carType": "Porsche",
+            "carTypeId": 1,
             "content": "Due to the ongoing crisis in Ukraine, I heard that Porsche announced they are halting production temporarily. At first it was just the Macan and Cayenne, now appears to be the whole model range. My Taycan is currently in production as of the Track Your Dream app on 3/1. Apparently the cut off date is 3/3 so I'm hoping my car is still going to be on-time. Anyone have any information on this?",
             "date": "2022-03-08",
             "commentId": 1
