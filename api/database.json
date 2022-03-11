@@ -17,6 +17,12 @@
         "name": "Ryan",
         "email": "Ryane@me.com",
         "password": "bmw335i"
+      },
+      {
+        "id": 4,
+        "name": "Lynn",
+        "email": "Lynn@me.com",
+        "password": "abcd"
       }
 
     ],
@@ -46,6 +52,10 @@
         {
             "id": 2,
             "name": "Nissan"
+        },
+        {
+            "id": 3,
+            "name": "BMW"
         }
     ],
     "forumPosts": [
@@ -69,11 +79,20 @@
         },
         {
             "id": 3,
-            "userId": 2,
+            "userId": 4,
             "title": "Taycan production delays?",
             "carTypeId": 1,
             "content": "Due to the ongoing crisis in Ukraine, I heard that Porsche announced they are halting production temporarily. At first it was just the Macan and Cayenne, now appears to be the whole model range. My Taycan is currently in production as of the Track Your Dream app on 3/1. Apparently the cut off date is 3/3 so I'm hoping my car is still going to be on-time. Anyone have any information on this?",
             "date": "2022-03-08",
+            "commentId": 1
+        },
+        {
+            "id": 4,
+            "userId": 2,
+            "title": "335i issues?",
+            "carTypeId": 3,
+            "content": "What are some common issues with the 335is? Are they reliable? And which years have which engine?",
+            "date": "2022-03-11",
             "commentId": 1
         }
     ],

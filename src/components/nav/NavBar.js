@@ -24,8 +24,13 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
             <Link className="nav-link" to="/">HOME</Link>
           </li>
           {isAuthenticated
-            ? <li className="nav-item">
-              <Link className="nav-link" to="/forum">FORUM</Link>
+            ? <li className="menu-item">
+              <Link className="menu" to="/forum">FORUMS</Link>
+              <ul className="drop-menu">
+                <li><Link className="drop-menu-iten" to="forum/subforum/1">Porsche</Link></li>
+                <li><Link className="drop-menu-item" to="forum/subforum/2">Nissan</Link></li>
+                <li><Link className="drop-menu-item" to="forum/subforum/3">BMW</Link></li>
+            </ul>
             </li>
             : null}
           {isAuthenticated 

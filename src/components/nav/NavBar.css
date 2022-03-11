@@ -21,7 +21,7 @@ ul {
     background-color: transparent;
 }
 
-.nav-item {
+.nav-item, .menu-item {
     color: white !important;
     background-color: black !important;
     border-bottom: 1px solid white !important;
@@ -33,16 +33,61 @@ ul {
     align-content: space-between;
 }
  
-.dropdown {
+
+.menu, .drop-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: white !important;
+    background-color: black;
+    height: 50px;
+}
+
+.menu-item {
     display: inline-block;
+    background-color: black;
     position: relative;
 }
+
+.menu-item a {
+    text-decoration: none;
+    padding: 6px 10px;
+    color: black;
+    display: block;
+}
+
+.drop-menu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    height:50px;
+    min-width: 100px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.drop-menu-item {
+    width: 100%;
+}
+
+.drop-menu-item:hover {
+    background-color: white;
+    color: black;
+}
+
+.drop-menu-item a {
+    color: black;
+}
+
+.menu-item:hover .drop-menu {
+    display: block;
+}
+  
 
 .navbar__logout {
     line-height: 35px;
 }
 
-ul li:nth-child(7),
+ul li:nth-child(6),
 .navbar__span {
     background-color: black !important;
     width: 70px;
