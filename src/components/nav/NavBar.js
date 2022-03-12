@@ -30,6 +30,11 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
                 <li><Link className="drop-menu-iten" to="forum/subforum/1">Porsche</Link></li>
                 <li><Link className="drop-menu-item" to="forum/subforum/2">Nissan</Link></li>
                 <li><Link className="drop-menu-item" to="forum/subforum/3">BMW</Link></li>
+                <li><Link className="drop-menu-item" to="forum/subforum/4">Audi</Link></li>
+                <li><Link className="drop-menu-item" to="forum/subforum/5">Mercedes</Link></li>
+                <li><Link className="drop-menu-item" to="forum/subforum/6">Toyota</Link></li>
+                <li><Link className="drop-menu-item" to="forum/subforum/7">Honda</Link></li>
+                <li><Link className="drop-menu-item" to="forum/subforum/8">Ford</Link></li>
             </ul>
             </li>
             : null}

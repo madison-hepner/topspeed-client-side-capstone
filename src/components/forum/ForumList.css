@@ -1,0 +1,43 @@
+
+.big__btns {
+    text-align: center;
+    padding-top: .5em;
+  }
+
+  
+  .crud__btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  #big__btn {
+    background-color: white;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    box-shadow: 3px 3px 4px darkgray;
+    color: maroon;
+    justify-content: center;
+    font-family: 'Audiowide', cursive;
+    padding-top: .5em;
+    width: 150px;
+  }
+  
+  #big__btn:hover {
+    background-color: white;
+    box-shadow: 5px 4px 5px darkgray;
+    color: maroon;
+    justify-content: center;
+    font-family: 'Audiowide', cursive;
+    width: 150px;
+  }
+  
+  #big__btn:focus {
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+    justify-content: center;
+    font-family: 'Audiowide', cursive;
+    color: maroon;
+    width: 150px;
+  }

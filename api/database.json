@@ -1,108 +1,178 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "name": "Madison",
-        "email": "Madison@me.com",
-        "password": "porsche911"
-      },
-      {
-        "id": 2,
-        "name": "Brian",
-        "email": "Brian@me.com",
-        "password": "nissan370z"
-      },
-      {
-        "id": 3,
-        "name": "Ryan",
-        "email": "Ryane@me.com",
-        "password": "bmw335i"
-      },
-      {
-        "id": 4,
-        "name": "Lynn",
-        "email": "Lynn@me.com",
-        "password": "abcd"
-      }
-
-    ],
-    "articles": [
-        {
-          "id": 1,
-          "url": "https://www.carthrottle.com/post/cargo-ship-carrying-porsches-lamborghinis-and-more-sinks-following-fire/",
-          "img": "https://images.cdn.circlesix.co/image/1/1366/0/uploads/posts/2022/03/c6761eda23e85283a5869cb979676dc8.jpeg",
-          "title": "Cargo Ship Carrying Porsches, Lamborghinis And More Sinks Following Fire",
-          "synopsis": "The stricken Felicity Ace sank in rough seas on Tuesday, taking around 4000 cars to the bottom of the Atlantic",
-          "date": "2022-03-02"
-        },
-        {
-            "id": 2,
-            "url": "https://www.motor1.com/news/571290/porsche-donate-million-ukraine-relief/",
-            "img": "https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/wp-content/uploads/2017/06/2018-Porsche-911-GT2-RS-102.jpg?crop=1.00xw:0.921xh;0,0.0341xh&resize=1200:*",
-            "title": "Porsche Is Latest Automaker To Donate €1 Million For Ukraine Relief",
-            "synopsis": "Porsche joins several automotive companies in donating funds for Ukrainian relief, pledging one million euros to the cause. That translates to approximately $1.1 million in US currency.",
-            "date": "2022-03-03"
-        }
-    ],
-    "carTypes": [
-        {
-            "id": 1,
-            "name": "Porsche"
-        },
-        {
-            "id": 2,
-            "name": "Nissan"
-        },
-        {
-            "id": 3,
-            "name": "BMW"
-        }
-    ],
-    "forumPosts": [
-        {
-            "id": 1,
-            "userId": 1,
-            "title": "Cayenne engine making whining noise",
-            "carTypeId": 1,
-            "content": "Hey everyone, my 2006 Cayenne is making a whining noise from the engine, any ideas on what it would be?",
-            "date": "2022-03-02",
-            "commentId": 1
-        },
-        {
-            "id": 2,
-            "userId": 3,
-            "title": "Should I buy reps or are the others worth it?",
-            "carTypeId": 2,
-            "content": "In my opinion, reps still look clean and obviously they're not as expensive. Are the others worth it though? Not sure about dropping 5k on rims...",
-            "date": "2022-03-07",
-            "commentId": 1
-        },
-        {
-            "id": 3,
-            "userId": 4,
-            "title": "Taycan production delays?",
-            "carTypeId": 1,
-            "content": "Due to the ongoing crisis in Ukraine, I heard that Porsche announced they are halting production temporarily. At first it was just the Macan and Cayenne, now appears to be the whole model range. My Taycan is currently in production as of the Track Your Dream app on 3/1. Apparently the cut off date is 3/3 so I'm hoping my car is still going to be on-time. Anyone have any information on this?",
-            "date": "2022-03-08",
-            "commentId": 1
-        },
-        {
-            "id": 4,
-            "userId": 2,
-            "title": "335i issues?",
-            "carTypeId": 3,
-            "content": "What are some common issues with the 335is? Are they reliable? And which years have which engine?",
-            "date": "2022-03-11",
-            "commentId": 1
-        }
-    ],
-    "postComments": [
-        {
-            "id": 1,
-            "userId": 2,
-            "content": "Is it the belt? Have you checked the oil?",
-            "postId": 1,
-            "date": "2022-03-04"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "Madison",
+      "email": "Madison@me.com",
+      "password": "porsche911"
+    },
+    {
+      "id": 2,
+      "name": "Brian",
+      "email": "Brian@me.com",
+      "password": "nissan370z"
+    },
+    {
+      "id": 3,
+      "name": "Ryan",
+      "email": "Ryane@me.com",
+      "password": "bmw335i"
+    },
+    {
+      "id": 4,
+      "name": "Lynn",
+      "email": "Lynn@me.com",
+      "password": "abcd"
+    },
+    {
+      "id": 5,
+      "name": "Collin",
+      "email": "Collin@me.com",
+      "password": "supra"
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "url": "https://www.carthrottle.com/post/cargo-ship-carrying-porsches-lamborghinis-and-more-sinks-following-fire/",
+      "img": "https://images.cdn.circlesix.co/image/1/1366/0/uploads/posts/2022/03/c6761eda23e85283a5869cb979676dc8.jpeg",
+      "title": "Cargo Ship Carrying Porsches, Lamborghinis And More Sinks Following Fire",
+      "synopsis": "The stricken Felicity Ace sank in rough seas on Tuesday, taking around 4000 cars to the bottom of the Atlantic",
+      "date": "2022-03-02"
+    },
+    {
+      "id": 2,
+      "url": "https://www.motor1.com/news/571290/porsche-donate-million-ukraine-relief/",
+      "img": "https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/wp-content/uploads/2017/06/2018-Porsche-911-GT2-RS-102.jpg?crop=1.00xw:0.921xh;0,0.0341xh&resize=1200:*",
+      "title": "Porsche Is Latest Automaker To Donate €1 Million For Ukraine Relief",
+      "synopsis": "Porsche joins several automotive companies in donating funds for Ukrainian relief, pledging one million euros to the cause. That translates to approximately $1.1 million in US currency.",
+      "date": "2022-03-03"
+    }
+  ],
+  "carTypes": [
+    {
+      "id": 1,
+      "name": "Porsche"
+    },
+    {
+      "id": 2,
+      "name": "Nissan"
+    },
+    {
+      "id": 3,
+      "name": "BMW"
+    },
+    {
+      "id": 4,
+      "name": "Audi"
+    },
+    {
+      "id": 5,
+      "name": "Mercedes"
+    },
+    {
+      "id": 6,
+      "name": "Toyota"
+    },
+    {
+      "id": 7,
+      "name": "Honda"
+    },
+    {
+      "id": 8,
+      "name": "Ford"
+    }
+  ],
+  "forumPosts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Cayenne engine making whining noise",
+      "carTypeId": 1,
+      "content": "Hey everyone, my 2006 Cayenne is making a whining noise from the engine, any ideas on what it would be?",
+      "date": "2022-03-02",
+      "commentId": 1
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "title": "Should I buy reps or are the others worth it?",
+      "carTypeId": 2,
+      "content": "In my opinion, reps still look clean and obviously they're not as expensive. Are the others worth it though? Not sure about dropping 5k on rims...",
+      "date": "2022-03-07",
+      "commentId": 1
+    },
+    {
+      "id": 3,
+      "userId": 4,
+      "title": "Taycan production delays?",
+      "carTypeId": 1,
+      "content": "Due to the ongoing crisis in Ukraine, I heard that Porsche announced they are halting production temporarily. At first it was just the Macan and Cayenne, now appears to be the whole model range. My Taycan is currently in production as of the Track Your Dream app on 3/1. Apparently the cut off date is 3/3 so I'm hoping my car is still going to be on-time. Anyone have any information on this?",
+      "date": "2022-03-08",
+      "commentId": 1
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "title": "335i issues?",
+      "carTypeId": 3,
+      "content": "What are some common issues with the 335is? Are they reliable? And which years have which engine?",
+      "date": "2022-03-11",
+      "commentId": 1
+    },
+    {
+      "id": 5,
+      "userId": 4,
+      "title": "2011 r8 v10 exhaust question",
+      "carTypeId": 4,
+      "content": "Picked up a single owner, low miles R8 v10 which I’m in love with. Can’t believe how smooth the drive is compared to my old Gallardo - albeit I must admit I prefer the Gallardo feeling but as I get older I welcome the refined drive. That said, when I start the car it’s obvious the exhaust valves are open and then after about a min or two they close, the question is shouldn’t the valves go open when I press the Sport button? I can see that if I press the sport button and drive it on Auto that it shifts at higher rpms but the exhaust note is the same whether or sport or not. From what I’ve read this is normal behavior, correct? With alternative being putting in an aftermarket exhaust?Also, I don’t notice any stiffness when putting the suspension on sport - yes, pressing both notes it on the display. Am I missing something? Thanks in advance.",
+      "date": "2022-03-13",
+      "commentId": 1
+    },
+    {
+      "id": 6,
+      "userId": 3,
+      "title": "New to 350z Need Advice Before I Buy",
+      "carTypeId": 2,
+      "content": " was looking for an 86' 300zx but the choices were just too few and awful and everybody seems to think they have a high dollar car no matter the condition. Even this old lady in my neighborhood. So! My father and I are shopping a 350z mid 2000's as a 2nd fun car and for when he visits. It has to be a manual and most likely will be a convertible but I'm not opposed to a hardtop if it's a good one. I can see a fair amount of 2006-7 with somewhat low miles 40-80k selling these day around 12-15k. KBB is around 12-13. Any general advice? Things technical to look for (I am very technical used to be a mechanic and I work on other my other cars still) Best years? Worst years? Tips tricks? I appreciate any and all advice. I have yet to even test drive one. Doing that today.",
+      "date": "2022-03-11",
+      "commentId": 1
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "title": "Switch to synthetic oil causing rear seal leak?",
+      "carTypeId": 5,
+      "content": "I know there's a thread on here where an expert posts a PDF with exhaustive research and knowledge on motor oil and it's effects on a variety of cars and conditions. If someone knows what I'm talking about could they post that here or link it? In the meantime, I've switched my 99 E320 wagon over to synthetic oil and suddenly I have what appears to be a rear seal leak. I actually can't find the source but it drips down where the engine meets the transmission below the little cover under the bell housing or surface plate. Any thoughts on what might cause that that's less trouble than a seal? There are a couple of hoses that are the transmission cooling lines and I just took apart the valve body and cleaned it and put in new springs and valves and a new conductor plate and flushed the ATF. This is definitely not ATF, it's motor oil. Although this dripping started after doing the transmission. My only thought there was that when I got it back together it ran like a new car! It seemed like the power was way up the shifting was perfect and I took it out and ran it up to 4,000 RPMs just to make sure that the limp mode conductor plate speed sensor problem was solved. Could revving it higher than it normally goes cause that leak? It does have 220,000 miles on it.",
+      "date": "2022-03-07",
+      "commentId": 1
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "title": "Testing Porsche",
+      "carTypeId": "1",
+      "content": "testing add form",
+      "date": "3/11/2022, 9:51:57 PM",
+      "commentId": 1
+    },
+    {
+      "id": 9,
+      "userId": 5,
+      "title": "testing toyota",
+      "carTypeId": "6",
+      "content": "hello hello",
+      "date": "3/11/2022, 11:16:46 PM",
+      "commentId": 1
+    }
+  ],
+  "postComments": [
+    {
+      "id": 1,
+      "userId": 2,
+      "content": "Is it the belt? Have you checked the oil?",
+      "postId": 1,
+      "date": "2022-03-04"
+    }
+  ]
 }
