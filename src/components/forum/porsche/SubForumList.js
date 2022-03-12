@@ -35,6 +35,11 @@ export const SubForumList = () => {
     <>
     <h2 className="page__title">{forumPosts[0]?.carType?.name}</h2>
     <div className="spacer"></div>
+    <section className="make__post">
+    <div className="bign__btns">
+        <button type="button" className="big__btn btn" id="big__btn" onClick={() => {navigate("/forum/addPost")}} >Make a Post</button>
+    </div>
+    </section>
 
       <div className="subForumPost__card">
           {forumPosts.map(forumPost =>

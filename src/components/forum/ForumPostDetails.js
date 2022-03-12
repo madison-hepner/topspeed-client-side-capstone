@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { getPostById } from '../modules/ForumManager';
+import { getAllComments, getCommentById } from '../modules/CommentManager';
 import './Forum.css';
-import { useParams, useNavigate } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom";
+import { CommentList } from '../comments/CommentList';
+
+
 
 export const PostDetails = () => {
-  const [forumPost, setPost] = useState({ title: "", content: "", carTypeId: "", date: ""});
+  const [forumPost, setPost] = useState({ title: "", content: "", carTypeId: "", model: "", date: "", commentId: ""});
 
   const {postId} = useParams();
   const navigate = useNavigate();
@@ -17,14 +21,23 @@ export const PostDetails = () => {
       });
   }, [postId]);
 
+
+
+
     return (
         <div className="forumPost__card">
+            <section className="make__post">
+                <div className="bign__btns">
+                    <button type="button" className="big__btn btn" id="big__btn" onClick={() => {navigate("/forum")}} >Return to Forum</button>
+                </div>
+            </section>
             <hr></hr>
-          <div className="forumPost__card">
+            <div className="forumPost__card">
             <h4><span className="forumPost__title">
               {forumPost.title}
             </span></h4>
-            <p><strong>Model:</strong> {forumPost.model}</p>
+            <p className="model"><strong>Model:</strong> {forumPost.model}</p>
+            <div className="spacer"></div>
             <p> {forumPost.content}</p>
             <p>{forumPost.date}</p>
   
@@ -34,11 +47,17 @@ export const PostDetails = () => {
     
           </div>
 
-          {/* <div className="forumPost_comments">
-            <p>{postComments.content}</p> */}
+          <div className="forumPost_comments">
+          <section className="featured__comments">
+                <h4 className="comments__header">Comments</h4>
+                <div className="articles__feature__spacer"></div>
 
+                <CommentList />
 
-          {/* </div> */}
+        </section>
+
+              
+          </div>
     
         </div>
       

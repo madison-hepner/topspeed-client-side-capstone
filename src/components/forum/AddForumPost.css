@@ -60,7 +60,7 @@
     justify-content: center;
     font-family: 'Audiowide', cursive;
     padding-top: .5em;
-    width: 150px;
+    width: auto;
   }
 
     
@@ -70,7 +70,7 @@
     color: maroon;
     justify-content: center;
     font-family: 'Audiowide', cursive;
-    width: 150px;
+    width: auto;
   }
   
   #big__btn:focus {
@@ -79,7 +79,7 @@
     justify-content: center;
     font-family: 'Audiowide', cursive;
     color: maroon;
-    width: 150px;
+    width: auto;
   }
 
 

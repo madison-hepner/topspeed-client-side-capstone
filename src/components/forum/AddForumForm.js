@@ -59,8 +59,6 @@ export const AddForumPostForm = () => {
 		if (postId === 0 || carTypeId === 0) {
 			window.alert("Please select input")
 		} else {
-			//invoke addemployee passing employee as an argument.
-			//once complete, change the url and display the employee list
 			addForumPost(forumPost)
 				.then(() => navigate("/forum"))
 		}

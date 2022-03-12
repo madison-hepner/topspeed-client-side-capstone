@@ -179,8 +179,8 @@
       "userId": 1,
       "title": "2014 GT Main Computer System Crash",
       "carTypeId": 8,
-      "model": "2014 mMstang GT",
-      "content": "what would cause a main computer system to short out in these cars?",
+      "model": "2014 mustang GT",
+      "content": "what would cause a main computer system to short out in these cars? It's a rebuilt title from a rear end collision, if that helps.",
       "date": "3/12/2022, 9:10:53 AM",
       "commentId": 1
     }
@@ -192,6 +192,13 @@
       "content": "Is it the belt? Have you checked the oil?",
       "postId": 1,
       "date": "2022-03-04"
+    },
+    {
+        "id": 2,
+        "userId": 4,
+        "content": "any exposed wires? that's the only way i think and main computer system could completely short out.",
+        "postId": 10,
+        "date": "3/12/2022, 9:10:53 AM"
     }
   ]
 }

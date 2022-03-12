@@ -10,6 +10,7 @@ export const getAllPosts = () => {
   .then(res => res.json())
 }
 
+
 export const getForumByCarType = (carTypeId) => {
     return fetch(`${remoteURL}/forumPosts?carTypeId=${carTypeId}&_expand=carType&_expand=user`)
     .then(res => res.json())
