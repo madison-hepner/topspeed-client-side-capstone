@@ -17,6 +17,7 @@ export const GenForum = ({ forumPost }) => {
           </span></h4>
           </Link>
           <p><strong>Car Type:</strong> {forumPost.carType?.name}</p>
+          <p><strong>Model:</strong> {forumPost.model}</p>
           <p><strong>Posted by:</strong> {forumPost.user.name}</p>
           <p>{forumPost.date}</p>
 

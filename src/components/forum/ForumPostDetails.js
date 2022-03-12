@@ -24,7 +24,7 @@ export const PostDetails = () => {
             <h4><span className="forumPost__title">
               {forumPost.title}
             </span></h4>
-            <p><strong>Car Type:</strong> {forumPost.carType?.name}</p>
+            <p><strong>Model:</strong> {forumPost.model}</p>
             <p> {forumPost.content}</p>
             <p>{forumPost.date}</p>
   

@@ -18,6 +18,7 @@ export const SubForum = ({forumPost}) => {
             {forumPost?.title}
           </span></h4>
           </Link>
+          <p><strong>Model:</strong> {forumPost.model}</p>
           <p><strong>Posted by:</strong> {forumPost.user?.name}</p>
           <p>{forumPost?.date}</p>
 

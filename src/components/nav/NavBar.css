@@ -59,6 +59,7 @@ ul {
     display: block;
     border-left: 2px solid black;
     border-right: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .drop-menu {
@@ -66,7 +67,7 @@ ul {
     position: absolute;
     background-color: black;
     height:50px;
-    min-width: 110px;
+    min-width: 123px;
     z-index: 9999;
     border-left: 2px solid black;
     border-right: 2px solid black;

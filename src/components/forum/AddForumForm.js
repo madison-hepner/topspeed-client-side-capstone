@@ -16,6 +16,7 @@ export const AddForumPostForm = () => {
         userId: sessionUserId,
         title: "",
         carTypeId: 0,
+        model: "",
         content: "",
         date: new Date().toLocaleString(),
         commentId: 1,
@@ -104,6 +105,13 @@ export const AddForumPostForm = () => {
 					</option>
 					))}
                     </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div  className="form__input">
+                        <label htmlFor="model" className="form__input__label" >Car Model:</label>
+                        <input type="text" className="big__form__input__field" id="model" onChange={handleControlledInputChange} required value={forumPost.model} /> 
+                        
                     </div>
                 </fieldset>
                 <section className="big__btns">
