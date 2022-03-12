@@ -31,6 +31,7 @@ ul {
     padding-right: 1em;
     font-family: 'Audiowide', cursive;
     align-content: space-between;
+    margin-bottom: .5px;
 }
  
 
@@ -83,7 +84,7 @@ ul {
     border-bottom: .5px solid black;
 }
 
-.drop-menu-item:hover {
+.drop-menu-item:hover, .grow {
     background-color: white;
     color: black;
 }

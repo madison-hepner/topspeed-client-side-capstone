@@ -88,15 +88,15 @@ export const AddForumPostForm = () => {
                 </fieldset>
                 <fieldset>
                     <div  className="form__input">
-                        <label htmlFor="content" className="form__input__label" >Post Contents:</label>
-                        <input type="text" className="form__input__field" id="content" onChange={handleControlledInputChange} required value={forumPost.content} /> 
+                        <label htmlFor="content" className="form__input__label" >Contents:</label>
+                        <input type="text" className="big__form__input__field" id="content" onChange={handleControlledInputChange} required value={forumPost.content} /> 
                         
                     </div>
                 </fieldset>
                 <fieldset>
                     <div  className="form__input">
-                    <label htmlFor="carTypeId">Car Type:</label>
-				    <select value={forumPost.carTypeId} name="carTypeId" id="carTypeId" onChange={handleControlledInputChange} className="form-control" >
+                    <label htmlFor="carTypeId" className="form__input__label">Car Type:</label>
+				    <select value={forumPost.carTypeId} name="carTypeId" id="carTypeId" onChange={handleControlledInputChange} className="form__input__field" >
 					<option value="0">Select a Car Type</option>
 					    {carTypes.map(carType => (
 						<option key={carType.id} value={carType.id}>
@@ -106,12 +106,14 @@ export const AddForumPostForm = () => {
                     </select>
                     </div>
                 </fieldset>
-                <div className="form__input crud__btn">
-                    <button className="submit__btn"
+                <section className="big__btns">
+                <div className="form__input__crud__btn">
+                    <button type="button" className="big__btn" id="big__btn"
                         onClick={handleClickSavePost}>
                         Submit
                     </button>
                 </div>
+                </section>
                 
             </div>
         </form>

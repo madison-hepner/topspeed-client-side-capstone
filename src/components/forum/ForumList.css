@@ -5,11 +5,6 @@
   }
 
   
-  .crud__btns {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
   
   #big__btn {
     background-color: white;

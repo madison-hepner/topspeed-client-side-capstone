@@ -1,4 +1,5 @@
 .form__input {
+    padding-top: .4em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -8,24 +9,77 @@
 
 .form__input__label {
     font-weight: bold;
-    text-align: right;
-    width: 100px;
+    text-align: left;
+    width: 80px;
 }
 
 .form__input__field {
-    background-color: rgb(13, 105, 139, .5);
-    border: none;
-    color: white;
+    background-color: white;
+    border: .8px solid black;
+    border-radius: .2em;
+    color: black;
     margin-bottom: 20px; 
     margin-left: 20px;
     padding: 5px;
     width: 50%;
+    height:50px;
+    overflow: scroll;
 }
 
-hr {
-    background-color: #0D698B;
+.big__form__input__field {
+    background-color: white;
+    border: .8px solid black;
+    border-radius: .2em;
+    color: black;
+    margin-bottom: 20px; 
+    margin-left: 20px;
+    padding: 5px;
+    width: 50%;
+    height:50px;
 }
 
-.taskForm2 {
-    padding: 1em;
+.big__btns {
+    text-align: center;
+    padding-top: .5em;
+  }
+
+.form__input__crud__btn {
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
+
+  #big__button {
+    background-color: white;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    box-shadow: 3px 3px 4px darkgray;
+    color: maroon;
+    justify-content: center;
+    font-family: 'Audiowide', cursive;
+    padding-top: .5em;
+    width: 150px;
+  }
+
+    
+  #big__btn:hover {
+    background-color: white;
+    box-shadow: 5px 4px 5px darkgray;
+    color: maroon;
+    justify-content: center;
+    font-family: 'Audiowide', cursive;
+    width: 150px;
+  }
+  
+  #big__btn:focus {
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+    justify-content: center;
+    font-family: 'Audiowide', cursive;
+    color: maroon;
+    width: 150px;
+  }
+
+

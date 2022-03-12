@@ -27,14 +27,14 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
             ? <li className="menu-item">
               <Link className="menu" to="/forum">FORUMS</Link>
               <ul className="drop-menu">
-                <li><Link className="drop-menu-iten" to="forum/subforum/1">Porsche</Link></li>
-                <li><Link className="drop-menu-item" to="forum/subforum/2">Nissan</Link></li>
-                <li><Link className="drop-menu-item" to="forum/subforum/3">BMW</Link></li>
-                <li><Link className="drop-menu-item" to="forum/subforum/4">Audi</Link></li>
-                <li><Link className="drop-menu-item" to="forum/subforum/5">Mercedes</Link></li>
-                <li><Link className="drop-menu-item" to="forum/subforum/6">Toyota</Link></li>
-                <li><Link className="drop-menu-item" to="forum/subforum/7">Honda</Link></li>
-                <li><Link className="drop-menu-item" to="forum/subforum/8">Ford</Link></li>
+                <div className="grow"><li><Link className="drop-menu-iten" to="forum/subforum/1">Porsche</Link></li></div>
+                <div className="grow"><li><Link className="drop-menu-item" to="forum/subforum/2">Nissan</Link></li></div>
+                <div className="grow"><li><Link className="drop-menu-item" to="forum/subforum/3">BMW</Link></li></div>
+                <div className="grow"><li><Link className="drop-menu-item" to="forum/subforum/4">Audi</Link></li></div>
+                <div className="grow"><li><Link className="drop-menu-item" to="forum/subforum/5">Mercedes</Link></li></div>
+                <div className="grow"><li><Link className="drop-menu-item" to="forum/subforum/6">Toyota</Link></li></div>
+                <div className="grow"><li><Link className="drop-menu-item" to="forum/subforum/7">Honda</Link></li></div>
+                <div className="grow"><li><Link className="drop-menu-item" to="forum/subforum/8">Ford</Link></li></div>
             </ul>
             </li>
             : null}
