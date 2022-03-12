@@ -52,7 +52,9 @@ export const PostDetails = () => {
                 <h4 className="comments__header">Comments</h4>
                 <div className="articles__feature__spacer"></div>
 
-                <CommentList />
+
+            <CommentList />
+
 
         </section>
 
