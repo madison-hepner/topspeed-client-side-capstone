@@ -6,7 +6,7 @@ import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
 import { ForumList } from "./forum/ForumList"
 import { PostDetails } from "./forum/ForumPostDetails"
-import { PorscheSubForum } from "./forum/porsche/PorscheList"
+import { SubForumList } from "./forum/porsche/SubForumList"
 import { AddForumPostForm } from "./forum/AddForumForm"
 
 
@@ -59,7 +59,7 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
 
             <Route exact path="/forum/subforum/:carTypeId" element={
                 <PrivateRoute>
-                    <PorscheSubForum />
+                    <SubForumList />
                 </PrivateRoute>
             } />
 

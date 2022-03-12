@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 // import './ForumPostDetails.css'
 import { useNavigate } from "react-router-dom";
 
-export const PorscheForum = ({forumPost}) => {
+export const SubForum = ({forumPost}) => {
     const navigate = useNavigate()
 
     return (

@@ -6,20 +6,20 @@ import { useNavigate, useParams} from "react-router-dom"
 import { getForumByCarType } from '../../modules/ForumManager';
 // import "./forum/Forum.css"
 // import "./ForumPostDetails"
-import { PorscheForum } from './Porsche';
+import { SubForum } from './SubForum.js';
 
-export const PorscheSubForum = () => {
+export const SubForumList = () => {
 
 
   // The initial state is an empty array
-  const [porschePosts, setPosts] = useState([]);
+  const [forumPosts, setPosts] = useState([]);
 
   const navigate = useNavigate();
   const {carTypeId} = useParams();
 
 
 
-  const getPorschePosts = () => {
+  const getForumPosts = () => {
     return getForumByCarType(+carTypeId).then(postsFromAPI => {
       setPosts(postsFromAPI)
     });
@@ -27,20 +27,20 @@ export const PorscheSubForum = () => {
 
   useEffect(() => {
     console.log("useEffect", carTypeId)
-    getPorschePosts()
+    getForumPosts()
   }, [carTypeId]);
 
 
   return (
     <>
-    <h2 className="page__title">{porschePosts[0]?.carType?.name}</h2>
+    <h2 className="page__title">{forumPosts[0]?.carType?.name}</h2>
     <div className="spacer"></div>
 
-      <div className="porschePost__card">
-          {porschePosts.map(porschePost =>
-          <PorscheForum
-              key={porschePost.id}
-              forumPost={porschePost} /> )}
+      <div className="subForumPost__card">
+          {forumPosts.map(forumPost =>
+          <SubForum
+              key={forumPost.id}
+              forumPost={forumPost} /> )}
       </div>
     </>
   );
