@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams} from "react-router-dom"
 import { getCommentByPost } from "../modules/CommentManager";
+import "./Comment.css"
 
 export const CommentList = () => {
     const { postId } = useParams()
@@ -27,20 +28,28 @@ export const CommentList = () => {
             <div className="comment__list">
                 {comments.map((comment) => {
                     return (
+                        <>
+                        <div className="user__comment">
+                        <div className="user__name">
+                            <strong>{comment.user?.name}</strong>
+                        </div>
                         <div className="comment__content">
                             {comment.content}
                         </div>
+                        <div className="comment__date">
+                            <small>posted on: {comment.date}</small>
+                        </div>
+                        </div>
+                        <hr></hr>
 
+                        </>
                     )
-                    })
+                 })
     
 
                 }
-
                 </div>
-
             </div>
-
         </>
 
 

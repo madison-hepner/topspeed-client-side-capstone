@@ -1,0 +1,14 @@
+.user__comment {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1.5em;
+}
+
+.user__name {
+    padding-right: 1em;
+}
+
+.comment__date {
+    padding-left: 1em;
+    opacity: 70%;
+}

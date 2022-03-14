@@ -4,6 +4,7 @@ import { getAllComments, getCommentById } from '../modules/CommentManager';
 import './Forum.css';
 import { useParams, useNavigate } from "react-router-dom";
 import { CommentList } from '../comments/CommentList';
+import "./ForumPostDetails.css"
 
 
 
@@ -33,11 +34,13 @@ export const PostDetails = () => {
             </section>
             <hr></hr>
             <div className="forumPost__card">
-            <h4><span className="forumPost__title">
-              {forumPost.title}
-            </span></h4>
-            <p className="model"><strong>Model:</strong> {forumPost.model}</p>
-            <div className="spacer"></div>
+            <div className="forumpost__header">
+                <h4><span className="forumPost__title">
+                    {forumPost.title}
+                </span></h4>
+            <p className="model"><strong>Model:</strong>  {forumPost.model}</p>
+            </div>
+            <div className="details__spacer"></div>
             <p> {forumPost.content}</p>
             <p>{forumPost.date}</p>
   

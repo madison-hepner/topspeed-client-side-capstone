@@ -6,3 +6,22 @@
     color: black !important;
     text-decoration: underline;
   }
+
+.forumpost__header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.model {
+    display: flex;
+    margin-left: auto;
+    margin-right: 0;
+    padding-right: .7em;
+}
+
+.details__spacer {
+    background-color: black;
+    width: auto;
+    height: 8px;
+    box-shadow: 3px 3px 4px darkgray;
+}
