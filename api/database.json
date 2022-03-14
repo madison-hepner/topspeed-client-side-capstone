@@ -183,6 +183,16 @@
       "content": "what would cause a main computer system to short out in these cars? It's a rebuilt title from a rear end collision, if that helps.",
       "date": "3/12/2022, 9:10:53 AM",
       "commentId": 1
+    },
+    {
+      "id": 11,
+      "userId": 1,
+      "title": "Lift Assist 2020 911 992",
+      "carTypeId": 1,
+      "model": "911 992",
+      "content": "I have a 2020 911 992 and it is equipped with Lift assist. The only way I can operate this feature is manually. is there a way for me to store/save the locations I use the lift assist in my vehicle?  I have seen that Porsche Tycoon has a place in the CAR setting to save locations. I can't find this on my 992!!",
+      "date": "3/14/2022, 3:44:53 AM",
+      "commentId": 1
     }
   ],
   "postComments": [
@@ -194,11 +204,25 @@
       "date": "2022-03-04"
     },
     {
-        "id": 2,
-        "userId": 4,
-        "content": "any exposed wires? that's the only way i think and main computer system could completely short out.",
-        "postId": 10,
-        "date": "3/12/2022, 9:10:53 AM"
+      "id": 2,
+      "userId": 4,
+      "content": "any exposed wires? that's the only way i think and main computer system could completely short out.",
+      "postId": 10,
+      "date": "3/12/2022, 9:10:53 AM"
+    },
+    {
+        "id": 3,
+        "userId": 5,
+        "content": "That feature is optional - front axle lift system adds GPS capability so that it can remember to automatically lift the nose at certain programmable locations. See if that was included in the package of your car. Otherwise, may be out of luck in getting it to do it automatically.",
+        "postId": 11,
+        "date": "3/14/2022, 3:47:53 AM"
+    },
+    {
+        "id": 4,
+        "userId": 2,
+        "content": "I'm told the GPS assisted is on the 21 builds (to be confrimed). I cant find any info also.",
+        "postId": 11,
+        "date": "3/14/2022, 3:47:53 AM"
     }
   ]
 }

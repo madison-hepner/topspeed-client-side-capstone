@@ -16,10 +16,16 @@ export const GenForum = ({ forumPost }) => {
             {forumPost.title}
           </span></h4>
           </Link>
-          <p><strong>Car Type:</strong> {forumPost.carType?.name}</p>
-          <p><strong>Model:</strong> {forumPost.model}</p>
-          <p><strong>Posted by:</strong> {forumPost.user.name}</p>
+          <div className="prev__wrap">
+          <div className="post__user">
+                <p><strong>Posted by:</strong> {forumPost.user.name}</p>
+          </div>
+          <div className="car__details">
+                <p><strong>Car Type:</strong> {forumPost.carType?.name}</p>
+                <p><strong>Model:</strong> {forumPost.model}</p>
+          </div>
           <p>{forumPost.date}</p>
+          </div>
 
   
           <hr></hr>

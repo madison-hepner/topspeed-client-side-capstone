@@ -38,11 +38,11 @@ export const PostDetails = () => {
                 <h4><span className="forumPost__title">
                     {forumPost.title}
                 </span></h4>
-            <p className="model"><strong>Model:</strong>  {forumPost.model}</p>
+            <p className="model"><strong>Model:</strong>{forumPost.model}</p>
             </div>
             <div className="details__spacer"></div>
             <p> {forumPost.content}</p>
-            <p>{forumPost.date}</p>
+            <p className="date">{forumPost.date}</p>
   
     
             <hr></hr>
@@ -53,7 +53,7 @@ export const PostDetails = () => {
           <div className="forumPost_comments">
           <section className="featured__comments">
                 <h4 className="comments__header">Comments</h4>
-                <div className="articles__feature__spacer"></div>
+                <div className="details__comment__spacer"></div>
 
 
             <CommentList />

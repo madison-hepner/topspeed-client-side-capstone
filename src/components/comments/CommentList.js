@@ -36,8 +36,8 @@ export const CommentList = () => {
                         <div className="comment__content">
                             {comment.content}
                         </div>
-                        <div className="comment__date">
-                            <small>posted on: {comment.date}</small>
+                        <div className="date__space">
+                            <p className="date"><small>{comment.date}</small></p>
                         </div>
                         </div>
                         <hr></hr>
