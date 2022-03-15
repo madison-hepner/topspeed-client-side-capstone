@@ -6,9 +6,17 @@ export const getCommentByPost = (postId) => {
     .then(res => res.json())
   }
 
-
-
   export const getAllComments = () => {
     return fetch(`${remoteURL}/postComments?expand=content&_expand=user`)
     .then(res => res.json())
   }
+
+  export const addComment = (newComment) => {
+    return fetch(`${remoteURL}/postComments`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newComment)
+    }).then(response => response.json())
+}

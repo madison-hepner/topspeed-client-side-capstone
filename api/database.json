@@ -211,18 +211,25 @@
       "date": "3/12/2022, 9:10:53 AM"
     },
     {
-        "id": 3,
-        "userId": 5,
-        "content": "That feature is optional - front axle lift system adds GPS capability so that it can remember to automatically lift the nose at certain programmable locations. See if that was included in the package of your car. Otherwise, may be out of luck in getting it to do it automatically.",
-        "postId": 11,
-        "date": "3/14/2022, 3:47:53 AM"
+      "id": 3,
+      "userId": 5,
+      "content": "That feature is optional - front axle lift system adds GPS capability so that it can remember to automatically lift the nose at certain programmable locations. See if that was included in the package of your car. Otherwise, may be out of luck in getting it to do it automatically.",
+      "postId": 11,
+      "date": "3/14/2022, 3:47:53 AM"
     },
     {
-        "id": 4,
-        "userId": 2,
-        "content": "I'm told the GPS assisted is on the 21 builds (to be confrimed). I cant find any info also.",
-        "postId": 11,
-        "date": "3/14/2022, 3:47:53 AM"
+      "id": 4,
+      "userId": 2,
+      "content": "I'm told the GPS assisted is on the 21 builds (to be confrimed). I cant find any info also.",
+      "postId": 11,
+      "date": "3/14/2022, 3:47:53 AM"
+    },
+    {
+      "userId": 1,
+      "content": "testing comment",
+      "postId": 1,
+      "date": "3/14/2022, 10:27:58 PM",
+      "id": 5
     }
   ]
 }

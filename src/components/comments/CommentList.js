@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useParams} from "react-router-dom"
+import { useNavigate, useParams, Navigate} from "react-router-dom"
 import { getCommentByPost } from "../modules/CommentManager";
 import "./Comment.css"
 
@@ -20,11 +20,18 @@ export const CommentList = () => {
     useEffect(() => {
         getCommentByPost(postId).then(setComments)
     }, [postId])
+    
 
     return (
         <>
             <div className="postCommentList">
-            
+            <div className="add__comment">
+            <section className="make__post">
+                <div className="bign__btns">
+                    <button type="button" className="big__btn btn" id="big__btn" onClick={() => {navigate(`/forum/subforum/addComment/${postId}`)}} >Add Comment</button>
+                </div>
+            </section>
+            </div>
             <div className="comment__list">
                 {comments.map((comment) => {
                     return (

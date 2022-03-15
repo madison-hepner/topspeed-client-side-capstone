@@ -32,7 +32,6 @@ export const PostDetails = () => {
                     <button type="button" className="big__btn btn" id="big__btn" onClick={() => {navigate("/forum")}} >Return to Forum</button>
                 </div>
             </section>
-            <hr></hr>
             <div className="forumPost__card">
             <div className="forumpost__header">
                 <h4><span className="forumPost__title">

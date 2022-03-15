@@ -19,7 +19,7 @@ export const AddForumPostForm = () => {
         model: "",
         content: "",
         date: new Date().toLocaleString(),
-        commentId: 1,
+        commentId: 0,
     });
     const [carTypes, setCarTypes] = useState([]);
 
