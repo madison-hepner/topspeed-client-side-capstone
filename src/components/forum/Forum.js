@@ -31,11 +31,10 @@ export const GenForum = ({ forumPost }) => {
           </div>
           </div>
           <div className="post__title__spacer"></div>
-  
           </div>
         </div>
-  
       </div>
+
     
     );
   }

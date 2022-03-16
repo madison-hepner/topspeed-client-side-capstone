@@ -1,0 +1,45 @@
+.forumPost__card {
+    padding-left: .2em;
+    padding-bottom: .4em;
+    padding-top: .3em;
+}
+
+
+/* .prev__wrap {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+}  */
+
+.card__grow { 
+    transition: all .09s ease-in-out; 
+    }
+
+.card__grow:hover { 
+    transform: scale(1.015); 
+    }
+
+.post__title__spacer {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+}
+
+.car__details {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.type__model__spacer {
+    display: flex;
+    width: 100px;
+    justify-content: space-evenly;
+}
+
+.model__date__spacer {
+    display: flex;
+    margin-left: auto;
+    margin-right: 0;
+    padding-right: .7em;
+}

@@ -11,23 +11,28 @@ export const SubForum = ({forumPost}) => {
 
     return (
       <div className="forumPost__card">
-          <hr></hr>
+        <div className="card__grow">
         <div className="forumPost__card">
+        <div className="header__title">
         <Link className="post__detail__link" to={`/forum/${forumPost.id}`}>
           <h4><span className="forumPost__title">
-            {forumPost?.title}
+            {forumPost.title}
           </span></h4>
           </Link>
-          <p><strong>Model:</strong> {forumPost.model}</p>
-          <p><strong>Posted by:</strong> {forumPost.user?.name}</p>
-          <p>{forumPost?.date}</p>
-
-  
-          <hr></hr>
-  
-  
+          </div>
+          <div className="prev__wrap">
+          <div className="car__details">
+                <p><strong>Posted by:</strong> {forumPost.user.name}</p>
+                <div className="type__model__spacer"></div>
+                <p><strong>Model:</strong> {forumPost.model}</p>
+                <div className="model__date__spacer">
+                <small className="post__date">{forumPost.date}</small>
+                </div>
+          </div>
+          </div>
+          <div className="post__title__spacer"></div>
+          </div>
         </div>
-  
       </div>
     
     );
