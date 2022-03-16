@@ -27,8 +27,8 @@ export const CommentList = () => {
             <div className="postCommentList">
             <div className="add__comment">
             <section className="make__post">
-                <div className="bign__btns">
-                    <button type="button" className="big__btn btn" id="big__btn" onClick={() => {navigate(`/forum/subforum/addComment/${postId}`)}} >Add Comment</button>
+                <div className="comment__btns">
+                    <button type="button" className="comment__btn btn" id="comment__btn" onClick={() => {navigate(`/forum/subforum/addComment/${postId}`)}} >add a comment</button>
                 </div>
             </section>
             </div>

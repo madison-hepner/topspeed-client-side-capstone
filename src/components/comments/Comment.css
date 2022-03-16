@@ -13,9 +13,47 @@
     opacity: 70%;
 }
 
+.comments__header {
+    font-family: 'Audiowide', cursive;
+}
+
 .date__space {
     display: flex;
     margin-left: auto;
     margin-right: 0;
     padding-right: .7em;
 }
+
+.comment__btns {
+    padding-top: .3em;
+}
+
+  
+  #comment__btn {
+    padding: .2em;
+    background-color: white;
+    color: maroon;
+    font-family: 'Audiowide', cursive;
+    padding-top: .3em;
+    height: auto;
+    width: auto;
+  }
+  
+  #comment__btn:hover {
+    background-color: white;
+    border-bottom: 2px solid black;
+    color: maroon;
+    font-family: 'Audiowide', cursive;
+    color: maroon !important;
+    height: auto;
+    width: auto;
+  }
+  
+  #comment__btn:focus {
+    background-color: white;
+    border-bottom: 2px solid black;
+    font-family: 'Audiowide', cursive;
+    color: maroon;
+    height: auto;
+    width: auto;
+  }

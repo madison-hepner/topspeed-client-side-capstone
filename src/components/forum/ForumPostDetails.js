@@ -29,7 +29,7 @@ export const PostDetails = () => {
         <div className="forumPost__card">
             <section className="make__post">
                 <div className="bign__btns">
-                    <button type="button" className="big__btn btn" id="big__btn" onClick={() => {navigate("/forum")}} >Return to Forum</button>
+                    <button type="button" className="big__btn btn" id="big__btn" onClick={() => {navigate(`/forum`)}} >Return to Forum</button>
                 </div>
             </section>
             <div className="forumPost__card">
