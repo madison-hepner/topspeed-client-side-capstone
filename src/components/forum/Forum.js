@@ -9,28 +9,30 @@ export const GenForum = ({ forumPost }) => {
 
     return (
       <div className="forumPost__card">
-          <hr></hr>
+        <div className="card__grow">
         <div className="forumPost__card">
+        <div className="header__title">
         <Link className="post__detail__link" to={`/forum/${forumPost.id}`}>
           <h4><span className="forumPost__title">
             {forumPost.title}
           </span></h4>
           </Link>
+          </div>
           <div className="prev__wrap">
-          <div className="post__user">
-                <p><strong>Posted by:</strong> {forumPost.user.name}</p>
-          </div>
           <div className="car__details">
+                <p><strong>Posted by:</strong> {forumPost.user.name}</p>
+                <div className="type__model__spacer"></div>
                 <p><strong>Car Type:</strong> {forumPost.carType?.name}</p>
+                <div className="type__model__spacer"></div>
                 <p><strong>Model:</strong> {forumPost.model}</p>
+                <div className="model__date__spacer">
+                <small className="post__date">{forumPost.date}</small>
+                </div>
           </div>
-          <p>{forumPost.date}</p>
           </div>
-
+          <div className="post__title__spacer"></div>
   
-          <hr></hr>
-  
-  
+          </div>
         </div>
   
       </div>

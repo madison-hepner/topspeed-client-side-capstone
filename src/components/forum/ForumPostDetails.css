@@ -12,6 +12,19 @@
     flex-wrap: wrap;
 }
 
+#header__title:hover {
+    border-bottom: 2px solid black;
+    color: maroon !important;
+    height: auto;
+    width: 700px;
+  }
+  
+  #header__title:focus {
+    border-bottom: 2px solid black;
+    height: auto;
+    width: 700px;
+  }
+
 .model {
     display: flex;
     margin-left: auto;
