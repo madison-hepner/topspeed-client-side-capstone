@@ -1,14 +1,15 @@
 // FORUM POST LIST
 import React, { useState, useEffect } from 'react';
 import { GenForum } from './Forum';
-import { getAllPosts } from '../modules/ForumManager';
-import { useNavigate} from "react-router-dom"
+import { getAllPosts, deletePost } from '../modules/ForumManager';
+import { useNavigate, useParams} from "react-router-dom"
 import "./Forum.css"
 import "./ForumPostDetails"
 import "./ForumList.css"
 
 export const ForumList = () => {
   // The initial state is an empty array
+  const {postId} = useParams();
   const [forumPosts, setPosts] = useState([]);
   const navigate = useNavigate();
 
@@ -17,6 +18,16 @@ export const ForumList = () => {
       setPosts(postsFromAPI)
     });
   };
+
+  useEffect(() => {
+    getPosts();
+  }, []);
+
+
+  const handleDeletePost = id => {
+    deletePost(id)
+    .then(() => getAllPosts().then(setPosts));
+};
 
   useEffect(() => {
     getPosts();
@@ -36,9 +47,11 @@ export const ForumList = () => {
           {forumPosts.map(forumPost =>
           <GenForum
               key={forumPost.id}
-              forumPost={forumPost} /> )}
+              forumPost={forumPost} 
+              handleDeletePost={handleDeletePost}/> )}
       </div>
       </section>
     </>
   );
 };
+

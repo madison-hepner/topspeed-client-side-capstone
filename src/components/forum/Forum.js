@@ -2,9 +2,12 @@ import react from "react";
 import { Link } from "react-router-dom";
 import './Forum.css'
 import './ForumPostDetails.css'
-import { useNavigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 
-export const GenForum = ({ forumPost }) => {
+export const GenForum = ({ forumPost, handleDeletePost }) => {
+    const sessionUser = JSON.parse(window.sessionStorage.getItem("topspeed_user"))
+    const sessionUserId = sessionUser.id
+
     const navigate = useNavigate()
 
     return (
@@ -29,12 +32,39 @@ export const GenForum = ({ forumPost }) => {
                 <small className="post__date">{forumPost.date}</small>
                 </div>
           </div>
-          </div>
+        
+        { forumPost.userId === sessionUserId
+        ? <div className="delete__post">
+        <section className="delete__post">
+            <div className="delete__btns">
+                <button type="button" className="delete__btn btn" id="delete__btn" onClick={() => handleDeletePost(forumPost.id)} ><small>delete post</small></button>
+            </div>
+        </section>
+        </div>
+        : ""
+        }
+
           <div className="post__title__spacer"></div>
           </div>
         </div>
       </div>
-
+    </div>
     
     );
   }
+
+
+          {/* {forumPost.map((post) => {
+            return(
+                post.user.user === sessionUserId
+                ? <div className="delete__post">
+                <section className="delete__post">
+                    <div className="delete__btns">
+                        <button type="button" className="delete__btn btn" id="delete__btn" onClick={() => handleDeletePost(forumPost.id).then(() => getAllPosts(postId).then(() => setPosts()))}><small>delete post</small></button>
+                    </div>
+                </section>
+                </div>
+                : ""
+            )
+        })}
+           */}

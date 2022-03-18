@@ -8,6 +8,7 @@ import { getCommentByPost } from "../modules/CommentManager";
 
 
 export const CommentForm = () => {
+
     const {postId} = useParams()
     const sessionUser = JSON.parse(window.sessionStorage.getItem("topspeed_user"))
     const sessionUserId = sessionUser.id

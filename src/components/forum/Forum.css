@@ -16,7 +16,7 @@
     }
 
 .card__grow:hover { 
-    transform: scale(1.015); 
+    transform: scale(1.011); 
     }
 
 .post__title__spacer {
@@ -43,3 +43,39 @@
     margin-right: 0;
     padding-right: .7em;
 }
+
+
+
+.delete__btns {
+    padding-top: .2em;
+}
+
+  
+  #delete__btn {
+    padding: .2em;
+    background-color: white;
+    color: maroon;
+    font-family: 'Audiowide', cursive;
+    padding-top: .3em;
+    height: auto;
+    width: auto;
+  }
+  
+  #delete__btn:hover {
+    background-color: white;
+    border-bottom: 2px solid black;
+    color: maroon;
+    font-family: 'Audiowide', cursive;
+    color: maroon !important;
+    height: auto;
+    width: auto;
+  }
+  
+  #delete__btn:focus {
+    background-color: white;
+    border-bottom: 2px solid black;
+    font-family: 'Audiowide', cursive;
+    color: maroon;
+    height: auto;
+    width: auto;
+  }

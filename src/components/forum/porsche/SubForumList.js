@@ -6,6 +6,7 @@ import { useNavigate, useParams} from "react-router-dom"
 import { getForumByCarType } from '../../modules/ForumManager';
 // import "./forum/Forum.css"
 // import "./ForumPostDetails"
+import './SubForum.css'
 import { SubForum } from './SubForum.js';
 
 export const SubForumList = () => {

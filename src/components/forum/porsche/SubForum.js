@@ -4,9 +4,13 @@ import react from "react";
 import { Link } from "react-router-dom";
 // import './Forum.css'
 // import './ForumPostDetails.css'
+import './SubForum.css'
 import { useNavigate } from "react-router-dom";
 
-export const SubForum = ({forumPost}) => {
+export const SubForum = ({forumPost, handleDeletePost}) => {
+
+  const sessionUser = JSON.parse(window.sessionStorage.getItem("topspeed_user"))
+  const sessionUserId = sessionUser.id
     const navigate = useNavigate()
 
     return (
@@ -29,6 +33,17 @@ export const SubForum = ({forumPost}) => {
                 <small className="post__date">{forumPost.date}</small>
                 </div>
           </div>
+
+          { forumPost.userId === sessionUserId
+        ? <div className="delete__post">
+        <section className="delete__post">
+            <div className="delete__btns">
+                <button type="button" className="delete__btn btn" id="delete__btn" onClick={() => handleDeletePost(forumPost.id)} ><small>delete post</small></button>
+            </div>
+        </section>
+        </div>
+        : ""
+        }
           </div>
           <div className="post__title__spacer"></div>
           </div>

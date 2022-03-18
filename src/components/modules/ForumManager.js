@@ -26,3 +26,9 @@ export const addForumPost = (newPost) => {
     }).then(response => response.json())
 }
 
+export const deletePost = (id) => {
+    return fetch(`${remoteURL}/forumPosts/${id}`, {
+      method: "DELETE"
+    }).then(result => result.json())
+  }
+
