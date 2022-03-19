@@ -1,5 +1,6 @@
 import "./TopSpeed.css"
 import "./Home.css"
+import { ArticleList } from "./articles/ArticleList"
 
 export const Home = () => {
     return (
@@ -24,6 +25,8 @@ export const Home = () => {
                 <div className="articles__feature__spacer"></div>
 
                 article cards go here
+
+                <ArticleList />
 
         </section>
         </>
