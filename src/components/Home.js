@@ -23,9 +23,6 @@ export const Home = () => {
         <section className="featured__articles">
                 <h3 className="featured__header">Featured</h3>
                 <div className="articles__feature__spacer"></div>
-
-                article cards go here
-
                 <ArticleList />
 
         </section>

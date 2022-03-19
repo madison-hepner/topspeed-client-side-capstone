@@ -28,7 +28,7 @@ export const ArticleList = () => {
 
     return (
         <>
-        <div className="article__card">
+        <div className="article__cards">
             {articles.map(article =>
                 <ArticleCard
                 key={article.id}

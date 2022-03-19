@@ -60,3 +60,84 @@
 .grow:hover { 
     transform: scale(1.1); 
     }
+
+.article__cards {
+    padding: .9em 2em;
+    display: flex;
+}
+
+ .article__card {
+    justify-content: space-evenly;
+    border: 2px solid black;
+    height: 350px;
+    width:350px;
+    border-radius: 1em;
+    padding: 2em;
+    position: relative;
+    width: 350px;
+    overflow: hidden;
+    box-shadow: 3px 3px 4px darkgray;
+} 
+
+
+.article__info {
+    text-decoration: none;
+}
+
+ .article__img {
+    display: block;
+    width: 100%;
+    height: 50%;
+ }
+
+ .container {
+    position: relative;
+    width: 50%;
+  }
+  
+
+  .container:hover .overlay {
+    height: auto;
+  }
+
+.overlay {
+    transition: all .4s ease-in-out; 
+    margin-bottom: 0;
+    overflow: hidden;
+    opacity: 70%;
+    padding: .5em;
+}
+    
+.overlay:hover { 
+  position: absolute;
+  padding: .5em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  opacity: 100%;
+  height: auto;
+  transition: all .4s ease-in-out; 
+}
+
+ .article__content {
+    display:flex;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transition: all 1.5s ease-in-out; 
+    } 
+
+/* .article__cards {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    height: 300px;
+    width:300px;
+    border-radius: 1em;
+} */
