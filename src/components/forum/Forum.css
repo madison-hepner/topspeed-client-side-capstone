@@ -47,7 +47,7 @@
 
 
 .delete__btns {
-    padding-top: .2em;
+    padding-top: .09em;
 }
 
   
@@ -56,7 +56,7 @@
     background-color: white;
     color: maroon;
     font-family: 'Audiowide', cursive;
-    padding-top: .3em;
+    padding-top: .09em;
     height: auto;
     width: auto;
   }

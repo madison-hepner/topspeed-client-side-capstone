@@ -8,7 +8,6 @@ import './SubForum.css'
 import { useNavigate } from "react-router-dom";
 
 export const SubForum = ({forumPost, handleDeletePost}) => {
-
   const sessionUser = JSON.parse(window.sessionStorage.getItem("topspeed_user"))
   const sessionUserId = sessionUser.id
     const navigate = useNavigate()
@@ -34,7 +33,7 @@ export const SubForum = ({forumPost, handleDeletePost}) => {
                 </div>
           </div>
 
-          { forumPost.userId === sessionUserId
+        { forumPost.userId === sessionUserId
         ? <div className="delete__post">
         <section className="delete__post">
             <div className="delete__btns">

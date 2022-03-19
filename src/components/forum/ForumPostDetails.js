@@ -42,7 +42,6 @@ export const PostDetails = () => {
             <div className="details__spacer"></div>
             <p> {forumPost.content}</p>
             <p className="date">{forumPost.date}</p>
-  
     
             <hr></hr>
     

@@ -22,7 +22,6 @@ export const AddForumPostForm = () => {
         commentId: 0,
     });
     const [carTypes, setCarTypes] = useState([]);
-
     const navigate = useNavigate();
 
 

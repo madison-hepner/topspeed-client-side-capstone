@@ -32,3 +32,13 @@ export const deletePost = (id) => {
     }).then(result => result.json())
   }
 
+  export const editPost = (editedPost) => {
+    return fetch(`${remoteURL}/forumPosts/${editedPost.id}`, {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(editedPost)
+    }).then(response => response.json())
+  }
+

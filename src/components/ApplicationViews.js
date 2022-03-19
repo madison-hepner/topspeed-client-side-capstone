@@ -9,6 +9,7 @@ import { PostDetails } from "./forum/ForumPostDetails"
 import { SubForumList } from "./forum/porsche/SubForumList"
 import { AddForumPostForm } from "./forum/AddForumForm"
 import { CommentForm } from "./comments/CommentForm"
+import { PostEditForm } from "./forum/ForumEditForm"
 
 
 
@@ -49,13 +50,19 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
                 <PrivateRoute>
                     <AddForumPostForm /> 
                 </PrivateRoute>
-        } />
+            } />
 
             <Route path="/forum/subforum/addComment/:postId" element={
                 <PrivateRoute>
                     <CommentForm /> 
                 </PrivateRoute>
-        } />
+            } />
+
+            <Route path="forum/:postId/edit" element={
+                <PrivateRoute>
+                    <PostEditForm />
+                </PrivateRoute> 
+            } />
 {/* 
             <Route exact path="/forum/porsche/" element={
                 <PrivateRoute>

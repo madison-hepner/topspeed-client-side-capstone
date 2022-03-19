@@ -2,11 +2,12 @@ import react from "react";
 import { Link } from "react-router-dom";
 import './Forum.css'
 import './ForumPostDetails.css'
-import { useNavigate} from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
-export const GenForum = ({ forumPost, handleDeletePost }) => {
+export const GenForum = ({ forumPost, handleDeletePost, handleEditPost }) => {
     const sessionUser = JSON.parse(window.sessionStorage.getItem("topspeed_user"))
     const sessionUserId = sessionUser.id
+    const {postId} = useParams();
 
     const navigate = useNavigate()
 
@@ -34,13 +35,16 @@ export const GenForum = ({ forumPost, handleDeletePost }) => {
           </div>
         
         { forumPost.userId === sessionUserId
-        ? <div className="delete__post">
+        ? <> <div className="delete__post">
         <section className="delete__post">
             <div className="delete__btns">
                 <button type="button" className="delete__btn btn" id="delete__btn" onClick={() => handleDeletePost(forumPost.id)} ><small>delete post</small></button>
             </div>
         </section>
         </div>
+
+        <button className="crud__btn btn" id="edit__btn" onClick={() => {navigate(`/forum/${forumPost.id}/edit`)}}>Edit</button>
+        </>
         : ""
         }
 
