@@ -195,16 +195,6 @@
       "commentId": 0
     },
     {
-      "id": 13,
-      "userId": 1,
-      "title": "testing post after changing edits",
-      "carTypeId": "2",
-      "model": "911 992",
-      "content": "testinggggg edit part",
-      "date": "3/19/2022, 12:50:06 PM",
-      "commentId": 0
-    },
-    {
       "id": 16,
       "userId": 1,
       "title": "testing post",

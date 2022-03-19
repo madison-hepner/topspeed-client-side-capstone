@@ -17,26 +17,6 @@ export const PostDetails = () => {
   const {postId} = useParams();
   const navigate = useNavigate();
 
-  const getPost = () => {
-    return getAllPosts().then(postsFromAPI => {
-      setPost(postsFromAPI)
-    });
-  };
-
-  useEffect(() => {
-    getPost();
-  }, []);
-
-
-  const handleDeletePost = id => {
-    deletePost(id)
-    .then(() => getAllPosts().then(setPost));
-};
-
-  useEffect(() => {
-    getPost();
-  }, []);
-
   useEffect(() => {
     console.log("useEffect", postId)
     getPostById(postId)
@@ -44,6 +24,16 @@ export const PostDetails = () => {
         setPost(post);
       });
   }, [postId]);
+
+
+  const handleDeletePost = id => {
+    deletePost(id)
+    .then(() => getAllPosts().then(setPost));
+};
+
+//   useEffect(() => {
+//     getPostById();
+//   }, []);
 
 
 
