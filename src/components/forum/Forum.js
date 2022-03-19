@@ -42,8 +42,6 @@ export const GenForum = ({ forumPost, handleDeletePost, handleEditPost }) => {
             </div>
         </section>
         </div>
-
-        <button className="crud__btn btn" id="edit__btn" onClick={() => {navigate(`/forum/${forumPost.id}/edit`)}}>Edit</button>
         </>
         : ""
         }

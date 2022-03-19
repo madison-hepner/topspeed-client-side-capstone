@@ -6,11 +6,13 @@ import { Link } from "react-router-dom";
 // import './ForumPostDetails.css'
 import './SubForum.css'
 import { useNavigate } from "react-router-dom";
+import { deletePost } from "../../modules/ForumManager";
 
 export const SubForum = ({forumPost, handleDeletePost}) => {
   const sessionUser = JSON.parse(window.sessionStorage.getItem("topspeed_user"))
   const sessionUserId = sessionUser.id
     const navigate = useNavigate()
+    
 
     return (
       <div className="forumPost__card">

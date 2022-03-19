@@ -1,7 +1,7 @@
 // // PORSCHE SPECIFIC FORUM SECTION
 
 import React, { useState, useEffect } from 'react';
-
+import { getAllPosts, deletePost } from '../../modules/ForumManager';
 import { useNavigate, useParams} from "react-router-dom"
 import { getForumByCarType } from '../../modules/ForumManager';
 // import "./forum/Forum.css"
@@ -32,6 +32,16 @@ export const SubForumList = () => {
   }, [carTypeId]);
 
 
+  const handleDeletePost = id => {
+    deletePost(id)
+    .then(() => getForumPosts().then(setPosts));
+};
+
+  useEffect(() => {
+    getForumPosts();
+  }, []);
+
+
   return (
     <>
     <h2 className="page__title">{forumPosts[0]?.carType?.name}</h2>
@@ -46,7 +56,8 @@ export const SubForumList = () => {
           {forumPosts.map(forumPost =>
           <SubForum
               key={forumPost.id}
-              forumPost={forumPost} /> )}
+              forumPost={forumPost} 
+              handleDeletePost={handleDeletePost}/> )}
       </div>
     </>
   );

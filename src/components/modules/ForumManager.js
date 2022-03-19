@@ -31,6 +31,7 @@ export const deletePost = (id) => {
       method: "DELETE"
     }).then(result => result.json())
   }
+  
 
   export const editPost = (editedPost) => {
     return fetch(`${remoteURL}/forumPosts/${editedPost.id}`, {

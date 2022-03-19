@@ -4,15 +4,38 @@ import { getAllComments, getCommentById } from '../modules/CommentManager';
 import './Forum.css';
 import { useParams, useNavigate } from "react-router-dom";
 import { CommentList } from '../comments/CommentList';
+import { getAllPosts, deletePost } from '../modules/ForumManager';
 import "./ForumPostDetails.css"
 
 
 
 export const PostDetails = () => {
-  const [forumPost, setPost] = useState({ title: "", content: "", carTypeId: "", model: "", date: "", commentId: ""});
+    const sessionUser = JSON.parse(window.sessionStorage.getItem("topspeed_user"))
+    const sessionUserId = sessionUser.id
+  const [forumPost, setPost] = useState({ id: "", title: "", content: "", carTypeId: "", model: "", date: "", commentId: ""});
 
   const {postId} = useParams();
   const navigate = useNavigate();
+
+  const getPost = () => {
+    return getAllPosts().then(postsFromAPI => {
+      setPost(postsFromAPI)
+    });
+  };
+
+  useEffect(() => {
+    getPost();
+  }, []);
+
+
+  const handleDeletePost = id => {
+    deletePost(id)
+    .then(() => getAllPosts().then(setPost));
+};
+
+  useEffect(() => {
+    getPost();
+  }, []);
 
   useEffect(() => {
     console.log("useEffect", postId)
@@ -21,7 +44,6 @@ export const PostDetails = () => {
         setPost(post);
       });
   }, [postId]);
-
 
 
 
@@ -42,6 +64,20 @@ export const PostDetails = () => {
             <div className="details__spacer"></div>
             <p> {forumPost.content}</p>
             <p className="date">{forumPost.date}</p>
+            { forumPost.userId === sessionUserId
+            ? <> <div className="delete__post">
+            <section className="delete__post">
+                <div className="delete__btns">
+                    <button type="button" className="delete__btn btn" id="delete__btn" onClick={() => handleDeletePost(forumPost.id)} ><small>delete post</small></button>
+                </div>
+            </section>
+            </div>
+
+            <button className="crud__btn btn" id="edit__btn" onClick={() => {navigate(`/forum/${forumPost.id}/edit`)}}>Edit</button>
+            </>
+            : ""
+            }
+
     
             <hr></hr>
     
