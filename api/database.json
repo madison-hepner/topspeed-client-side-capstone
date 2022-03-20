@@ -55,6 +55,30 @@
       "title": "Mercedes-Benz EQG: Timing Confirmed For Factory G-Wagen EV",
       "synopsis": "We've already seen a concept of what an electric G-Wagen would look like, and it seemed nearly production-ready. If you need more proof that the idea is real for the skeptics, Mercedes has finally confirmed the new, all-electric Mercedes-Benz EQG is slated for sale in 2024. The confirmation comes from the very top: Mercedes-Benz Chairman Ola Kallenius.",
       "date": "2022-19-03"
+    },
+    {
+      "id": 4,
+      "url": "https://www.bloomberg.com/news/articles/2022-03-16/used-car-prices-are-surging-here-s-how-people-are-making-a-profit",
+      "img": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/is6ksQbhk0sc/v1/1400x-1.jpg",
+      "title": "How Surging Used-Car Prices Are Turning Vehicles Into a Profitable Investment",
+      "synopsis": "Some car owners are selling their vehicles to make the most of the current market mayhem.",
+      "date": "2022-19-03"
+    },
+    {
+      "id": 5,
+      "url": "https://www.wsj.com/articles/porsche-and-apple-held-talks-last-year-about-undisclosed-projects-11647620950",
+      "img": "https://media.evo.co.uk/image/private/s--6j7lZqHp--/f_auto,t_content-image-full-desktop@1/v1607944884/evo/2020/12/992%20Porsche%20911%20GT3%20Cup-2.jpg",
+      "title": "Porsche and Apple Held Talks Last Year About Undisclosed Projects",
+      "synopsis": "Preliminary discussions said to be wide-ranging, included potential digital collaboration",
+      "date": "2022-03-03"
+    },
+    {
+      "id": 6,
+      "url": "https://www.wsj.com/articles/ukraine-war-plunges-auto-makers-into-new-supply-chain-crisis-11646309152",
+      "img": "https://cdn.wionews.com/sites/default/files/styles/story_page/public/2022/02/26/243758-vw.jpg",
+      "title": "Ukraine War Plunges Auto Makers Into New Supply-Chain Crisis",
+      "synopsis": "After a pandemic and a global chip crunch, Russia’s war in Ukraine has unleashed auto makers’ third supply-chain crisis in as many years. Car manufacturers halt Russian factories, sales as sanctions bite.",
+      "date": "2022-03-03"
     }
   ],
   "carTypes": [

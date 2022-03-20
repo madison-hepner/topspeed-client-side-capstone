@@ -62,8 +62,9 @@
     }
 
 .article__cards {
-    padding: .9em 2em;
+    padding: .9em 2em 1.5em;
     display: flex;
+    flex-wrap: wrap;
 }
 
  .article__card {
