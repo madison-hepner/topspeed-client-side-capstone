@@ -5,7 +5,7 @@ import './../TopSpeed.css'
 import { useNavigate } from "react-router-dom";
 
 
-export const ArticleCard = ({ article, handleDeleteArticle, handleEditArticle }) => {
+export const ArticleCard = ({ article }) => {
 
     const navigate = useNavigate();
 
@@ -26,8 +26,7 @@ export const ArticleCard = ({ article, handleDeleteArticle, handleEditArticle })
                         <strong> Go to full article</strong>
                     </Link></p> */}
                     </div>
-                </div>
-            <hr></hr>
+            </div>
             </div>
         </div>
         </>

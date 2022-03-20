@@ -97,15 +97,16 @@
   
 
   .container:hover .overlay {
-    height: auto;
+    max-height: 290px;
   }
 
 .overlay {
     transition: all .4s ease-in-out; 
-    margin-bottom: 0;
+    transform: translateY(0);
     overflow: hidden;
     opacity: 70%;
     padding: .5em;
+    height: 350px;
 }
     
 .overlay:hover { 
@@ -117,11 +118,13 @@
   overflow: hidden;
   width: 100%;
   opacity: 100%;
-  height: auto;
+  height: 350px;
   transition: all .4s ease-in-out; 
+  overflow: scroll;
+  transform: translateY(-20%);
 }
 
- .article__content {
+ /* .article__content {
     display:flex;
     font-size: 20px;
     position: absolute;
@@ -131,7 +134,7 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transition: all 1.5s ease-in-out; 
-    } 
+    }  */
 
 /* .article__cards {
     display: flex;
