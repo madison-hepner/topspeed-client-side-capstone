@@ -20,3 +20,9 @@ export const getCommentByPost = (postId) => {
         body: JSON.stringify(newComment)
     }).then(response => response.json())
 }
+
+export const deleteComment = (id) => {
+    return fetch(`${remoteURL}/postComments/${id}`, {
+      method: "DELETE"
+    }).then(result => result.json())
+  }

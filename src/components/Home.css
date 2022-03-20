@@ -1,3 +1,4 @@
+
 .page__title {
     text-align: center;
     font-family: 'Audiowide', cursive;
@@ -10,7 +11,7 @@
     width: 240px;
     background-color: transparent;
   }
-
+  
 
  /* SPACERS */
 
@@ -79,6 +80,10 @@
     overflow: hidden;
     box-shadow: 3px 3px 4px darkgray;
 } 
+
+.article__link {
+    text-decoration: none;
+}
 
 
 .article__info {

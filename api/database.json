@@ -225,6 +225,16 @@
       "content": "engine says bmw in my mkv surpra.. which one is it?",
       "date": "3/14/2022, 10:34:11 PM",
       "commentId": 0
+    },
+    {
+      "id": 13,
+      "userId": 1,
+      "title": "test",
+      "carTypeId": 1,
+      "model": "911 992",
+      "content": "test",
+      "date": "3/20/2022, 5:21:32 PM",
+      "commentId": 0
     }
   ],
   "postComments": [
@@ -276,6 +286,13 @@
       "postId": 16,
       "date": "3/19/2022, 1:58:39 PM",
       "id": 7
+    },
+    {
+      "userId": 1,
+      "content": "test2",
+      "postId": 1,
+      "date": "3/20/2022, 5:36:17 PM",
+      "id": 9
     }
   ]
 }

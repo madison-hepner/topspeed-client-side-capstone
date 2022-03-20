@@ -22,9 +22,9 @@ export const ArticleCard = ({ article }) => {
                 <h4 className="article__title" target="_blank"> {article.title}</h4>
                 </Link>
                     <p><strong>Synopsis</strong> {article.synopsis}</p>
-                    {/* <Link to={article.url}>
-                        <strong> Go to full article</strong>
-                    </Link></p> */}
+                    <Link className="article__link" to={article.url}>
+                        <small>click to see full article</small>
+                    </Link>
                     </div>
             </div>
             </div>
