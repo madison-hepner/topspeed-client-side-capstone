@@ -54,6 +54,8 @@ export const PostDetails = () => {
             <div className="details__spacer"></div>
             <p> {forumPost.content}</p>
             <p className="date">{forumPost.date}</p>
+            <div className="date__space"></div>
+            <small>
             { forumPost.userId === sessionUserId
             ? <> <div className="delete__post">
             <section className="delete__post">
@@ -67,7 +69,7 @@ export const PostDetails = () => {
             </>
             : ""
             }
-
+            </small>
     
             <hr></hr>
     
@@ -79,7 +81,7 @@ export const PostDetails = () => {
                 <h4 className="comments__header">Comments</h4>
                 <div className="details__comment__spacer"></div>
 
-
+            
             <CommentList />
 
 

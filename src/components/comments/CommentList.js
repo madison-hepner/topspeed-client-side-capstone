@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams, Navigate} from "react-router-dom"
-import { deleteComment, getCommentByPost } from "../modules/CommentManager";
+import { deleteComment, getAllComments, getCommentByPost } from "../modules/CommentManager";
+import { Comments } from './Comment';
 import "./Comment.css"
 
 export const CommentList = () => {
@@ -9,87 +10,104 @@ export const CommentList = () => {
     const sessionUser = JSON.parse(window.sessionStorage.getItem("topspeed_user"))
     const sessionUserId = sessionUser.id
 
-    const [comments, setComments] = useState([]);
+    const [postComments, setComments] = useState([]);
 
-    const getAllComments = () => {
-        return getCommentByPost(postId).then(commentsFromAPI => {
+    // const getAllComments = () => {
+    //     return getCommentByPost(postId).then(commentsFromAPI => {
+    //       setComments(commentsFromAPI)
+    //     });
+    //   };
+
+    //   useEffect(() => {
+    //     getCommentByPost(postId).then(setComments)
+    // }, [postId])
+
+    //   const handleDeleteComment = (id) => {
+    //     deleteComment(id)
+    //     .then(() => getCommentByPost().then(setComments));
+    // };
+
+    // useEffect(() => {
+    //     getCommentByPost(postId).then(setComments)
+    // }, [])
+
+
+    const getComments = () => {
+        // After the data comes back from the API, we
+        //  use the setAnimals function to update state
+        return getCommentByPost(+postId).then(commentsFromAPI => {
           setComments(commentsFromAPI)
+          console.log(postComments)
         });
       };
 
-      const handleDeleteComment = (id) => {
+      const syncComments = () => {
+        getComments()
+        .then(setComments)
+      }
+
+
+      const handleDeleteComment = id => {
         deleteComment(id)
-        .then(() => getCommentByPost().then(setComments));
+        .then(syncComments)
     };
-
-    useEffect(() => {
-        getCommentByPost(postId).then(setComments)
-    }, [postId])
-
-
     
 
-    
+      // got the animals from the API on the component's first render
+      useEffect(() => {
+        getCommentByPost(+postId).then(setComments)
+    }, [])
     
 
-    return (
+
+ return (
         <>
-            <div className="postCommentList">
-            <div className="add__comment">
-            <section className="make__post">
-                <div className="comment__btns">
-                    <button type="button" className="comment__btn btn" id="comment__btn" onClick={() => {navigate(`/forum/subforum/addComment/${postId}`)}} >add a comment</button>
-                </div>
-            </section>
-            </div>
-            <div className="comment__list">
-                {comments.map((comment) => {
-                    return (
-                        <>
-                        <div className="user__comment">
-                        <div className="user__name">
-                            <strong>{comment.user?.name}</strong>
-                        </div>
-                        <div className="comment__content">
-                            {comment.content}
-                        </div>
-                        <div className="date__space">
-                            <p className="date"><small>{comment.date}</small></p>
-                        </div>
+         <div className="comment__btns">
+            <button type="button" className="comment__btn btn" id="comment__btn" onClick={() => {navigate(`/forum/subforum/addComment/${postId}`)}} >add a comment</button>
+        </div>
+            {postComments?.map(postComment => {
+              return <div className="postCommentList">
+            
+              <div className="comment__list">
+                          <div className="user__comment">
+                          <div className="user__name">
+                              <strong>{postComment.user?.name}</strong>
+                          </div>
+                          <div className="comment__content">
+                              {postComment?.content}
+                          </div>
+                          <div className="date__space">
+                              <p className="date"><small>{postComment?.date}</small></p>
+                          </div>
+  
+                          { postComment?.userId === sessionUserId
+                              ? 
+                              <> <div className="delete__post">
+                              <section className="delete__post">
+                                  <div className="delete__btns">
+                                      <button type="button" className="delete__btn btn" id="delete__btn" onClick={() => handleDeleteComment(postComment?.id)} ><small>delete comment</small></button>
+                                  </div>
+                              </section>
+                              </div>
+  
+                              {/* <button className="crud__btn btn" id="edit__btn" onClick={() => {navigate(`/forum/${forumPost.id}/edit`)}}>Edit</button> */}
+                              </>
+                              : ""
+                          }
+                          </div>
 
-                        { comment.userId === sessionUserId
-                            ? <> <div className="delete__post">
-                            <section className="delete__post">
-                                <div className="delete__btns">
-                                    <button type="button" className="delete__btn btn" id="delete__btn" onClick={() => handleDeleteComment(comment.id)} ><small>delete comment</small></button>
-                                </div>
-                            </section>
-                            </div>
 
-                            {/* <button className="crud__btn btn" id="edit__btn" onClick={() => {navigate(`/forum/${forumPost.id}/edit`)}}>Edit</button> */}
-                            </>
-                            : ""
-                        }
-                        </div>
-                        <hr></hr>
+                          <hr></hr>
 
-                        </>
-                    )
-                 })
-    
+            
+                  </div>
+              </div>
 
-                }
-                </div>
-            </div>
+                        })}
+                        
         </>
-
-
-
-
+                        
 
     )
-
-
-
-
+                    
 }

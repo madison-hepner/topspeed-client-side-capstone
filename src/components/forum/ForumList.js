@@ -29,6 +29,11 @@ export const ForumList = () => {
     .then(() => getAllPosts().then(setPosts));
 };
 
+// var sortedPosts = forumPosts.sort((a,b) => {
+//     return new Date(a.sch).getTime() - 
+//         new Date(b.scheduled_for).getTime()
+// }).reverse();
+
   useEffect(() => {
     getPosts();
   }, []);

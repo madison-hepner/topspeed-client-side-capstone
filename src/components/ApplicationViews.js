@@ -63,6 +63,7 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
                     <PostEditForm />
                 </PrivateRoute> 
             } />
+            
 {/* 
             <Route exact path="/forum/porsche/" element={
                 <PrivateRoute>

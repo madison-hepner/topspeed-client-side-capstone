@@ -26,3 +26,13 @@ export const deleteComment = (id) => {
       method: "DELETE"
     }).then(result => result.json())
   }
+
+  export const editComment = (editedComment) => {
+    return fetch(`${remoteURL}/postComments/${editedComment.id}`, {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(editedComment)
+    }).then(response => response.json())
+  }

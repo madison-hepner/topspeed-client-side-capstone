@@ -1,5 +1,5 @@
 .forumPost__card {
-    padding-left: .2em;
+    padding-left: .4em;
     padding-bottom: .4em;
     padding-top: .3em;
 }
@@ -16,7 +16,7 @@
     }
 
 .card__grow:hover { 
-    transform: scale(1.011); 
+    transform: scale(1.01); 
     }
 
 .post__title__spacer {
