@@ -96,7 +96,7 @@
 
  .article__card {
     justify-content: space-evenly;
-    border: 2px solid black;
+    border: 1px solid black;
     height: 350px;
     width:350px;
     border-radius: 1em;
