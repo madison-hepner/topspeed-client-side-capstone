@@ -53,9 +53,9 @@ export const PostDetails = () => {
             </div>
             <div className="details__spacer"></div>
             <p> {forumPost.content}</p>
+            <div className="postdetails__buttons">
             <p className="date">{forumPost.date}</p>
             <div className="date__space"></div>
-            <small>
             { forumPost.userId === sessionUserId
             ? <> <div className="delete__post">
             <section className="delete__post">
@@ -64,12 +64,20 @@ export const PostDetails = () => {
                 </div>
             </section>
             </div>
-
-            <button className="crud__btn btn" id="edit__btn" onClick={() => {navigate(`/forum/${forumPost.id}/edit`)}}>Edit</button>
+            <div className="edit__post">
+            <section className="edit__post">
+                <div className="edit__btns">
+            <button className="crud__btn btn" id="edit__btn" onClick={() => {navigate(`/forum/${forumPost.id}/edit`)}}><small>edit</small></button>
+            </div>
+            </section>
+            </div>
+            
             </>
+            
             : ""
             }
-            </small>
+
+            </div>
     
             <hr></hr>
     

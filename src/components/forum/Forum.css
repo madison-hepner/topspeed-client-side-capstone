@@ -45,6 +45,14 @@
 }
 
 
+.postdetails__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    align-content: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+}
 
 .delete__btns {
     padding-top: .09em;
@@ -72,6 +80,41 @@
   }
   
   #delete__btn:focus {
+    background-color: white;
+    border-bottom: 2px solid black;
+    font-family: 'Audiowide', cursive;
+    color: maroon;
+    height: auto;
+    width: auto;
+  }
+
+
+.edit__btns {
+    padding-top: .09em;
+}
+
+  
+  #edit__btn {
+    padding: .2em;
+    background-color: white;
+    color: maroon;
+    font-family: 'Audiowide', cursive;
+    padding-top: .09em;
+    height: auto;
+    width: auto;
+  }
+  
+  #edit__btn:hover {
+    background-color: white;
+    border-bottom: 2px solid black;
+    color: maroon;
+    font-family: 'Audiowide', cursive;
+    color: maroon !important;
+    height: auto;
+    width: auto;
+  }
+  
+  #edit__btn:focus {
     background-color: white;
     border-bottom: 2px solid black;
     font-family: 'Audiowide', cursive;
