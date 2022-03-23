@@ -13,9 +13,9 @@
     opacity: 70%;
 }
 
-/* .comments__header {
-    font-family: 'Audiowide', cursive;
-} */
+.comments__header {
+    font-size: 16pt;
+}
 
 .date__space {
     display: flex;

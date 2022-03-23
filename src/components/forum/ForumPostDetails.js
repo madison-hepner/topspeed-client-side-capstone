@@ -13,9 +13,9 @@ export const PostDetails = () => {
     const sessionUser = JSON.parse(window.sessionStorage.getItem("topspeed_user"))
     const sessionUserId = sessionUser.id
   const [forumPost, setPost] = useState({ id: "", title: "", content: "", carTypeId: "", model: "", date: "", commentId: ""});
-
   const {postId} = useParams();
   const navigate = useNavigate();
+  const [postComments, setComments] = useState([]);
 
   useEffect(() => {
     console.log("useEffect", postId)

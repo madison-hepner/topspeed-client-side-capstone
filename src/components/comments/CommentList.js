@@ -43,7 +43,6 @@ export const CommentList = () => {
 
       const syncComments = () => {
         getComments()
-        .then(setComments)
       }
 
 
@@ -62,9 +61,13 @@ export const CommentList = () => {
 
  return (
         <>
-         <div className="comment__btns">
-            <button type="button" className="comment__btn btn" id="comment__btn" onClick={() => {navigate(`/forum/subforum/addComment/${postId}`)}} >add a comment</button>
-        </div>
+        <div className="add__comment">
+            <section className="make__post">
+                <div className="comment__btns">
+                    <button type="button" className="comment__btn btn" id="comment__btn" onClick={() => {navigate(`/forum/subforum/addComment/${postId}`)}} ><small>add a comment</small></button>
+                </div>
+            </section>
+            </div>
             {postComments?.map(postComment => {
               return <div className="postCommentList">
             

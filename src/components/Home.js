@@ -10,12 +10,15 @@ export const Home = () => {
         <div className="grow">
         <h2 className="page__title">Welcome to Top Speed</h2>
         </div>
+        <div className="home__spacer"></div>
+        <h4 className="about__header">About</h4>
+        <div className="details__comment__spacer"></div>
+         <p className="about__text">Top Speed is a car froum that aims to make a place for car enthusiasts to discuss their projects, ask their questions, and connect with others of same interest. Browse the general forum to see all posts made, and browse individual forums to be make-specific. Enjoy! </p>
+        <div className="about__spacer"></div>
         <div className="header__spacer"></div>
 
         <div className="article__box">
-         // ARTICLES CLICK THROUGH HERE
-         // PLACEHOLDER
-
+        //NEWS SPOTLIGHT PLACEHOLDER
         </div>
         <div className="header__spacer"></div>
         </section>

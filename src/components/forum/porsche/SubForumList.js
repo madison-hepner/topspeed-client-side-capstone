@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { getAllPosts, deletePost } from '../../modules/ForumManager';
 import { useNavigate, useParams} from "react-router-dom"
 import { getForumByCarType } from '../../modules/ForumManager';
+import { getAllCarTypes } from '../../modules/CarTypeManager';
 // import "./forum/Forum.css"
 // import "./ForumPostDetails"
 import './SubForum.css'
@@ -14,11 +15,16 @@ export const SubForumList = () => {
 
   // The initial state is an empty array
   const [forumPosts, setPosts] = useState([]);
+  const [carTypes, setCarTypes] = useState([]);
 
   const navigate = useNavigate();
   const {carTypeId} = useParams();
 
-
+  const getCarTypes = () => {
+    return getAllCarTypes().then(carTypesFromAPI => {
+        setCarTypes(carTypesFromAPI)
+    })
+}
 
   const getForumPosts = () => {
     return getForumByCarType(+carTypeId).then(postsFromAPI => {
@@ -34,26 +40,33 @@ export const SubForumList = () => {
 
   const handleDeletePost = id => {
     deletePost(id)
-    .then(() => getForumPosts().then(setPosts));
+    .then(() => getForumPosts());
 };
 
+var sortedSubPosts = forumPosts.sort((a,b) => {
+  return new Date(a.date).getTime() - 
+      new Date(b.date).getTime()
+}).reverse();
+
+useEffect(() => {
+  getCarTypes()
+}, []);
+
   useEffect(() => {
-    getForumPosts();
+    getForumPosts(sortedSubPosts);
   }, []);
+
 
 
   return (
     <>
-    <h2 className="page__title">{forumPosts[0]?.carType?.name}</h2>
+    <h2 className="page__title">
+        {forumPosts[0]?.carType?.name}
+    </h2>
     <div className="spacer"></div>
-    <section className="make__post">
-    <div className="bign__btns">
-        <button type="button" className="big__btn btn" id="big__btn" onClick={() => {navigate("/forum/addPost")}} >Make a Post</button>
-    </div>
-    </section>
 
       <div className="subForumPost__card">
-          {forumPosts.map(forumPost =>
+          {forumPosts?.map(forumPost =>
           <SubForum
               key={forumPost.id}
               forumPost={forumPost} 
