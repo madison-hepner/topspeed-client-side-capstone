@@ -7,7 +7,7 @@ import { getAllPosts, getPostById } from "../modules/ForumManager";
 import { getCommentByPost } from "../modules/CommentManager";
 
 
-export const CommentForm = () => {
+export const CommentForm = ({showModal, setShowModal}) => {
 
     const {postId} = useParams()
     const sessionUser = JSON.parse(window.sessionStorage.getItem("topspeed_user"))
@@ -22,14 +22,28 @@ export const CommentForm = () => {
     })
     const [forumPost, setPost] = useState({})
 
+    const getComments = () => {
+        // After the data comes back from the API, we
+        //  use the setAnimals function to update state
+        return getCommentByPost(+postId).then(commentsFromAPI => {
+          setComment(commentsFromAPI)
+          console.log(postComment)
+        });
+      };
+
+      const syncComments = () => {
+        getComments()
+      }
+
 
 
 const handleClickSaveComment = (event) => {
     event.preventDefault() //Prevents the browser from submitting the form
     const newComment = {...postComment}
     newComment.content = content.current.value
-    addComment(newComment)
-    .then(() => navigate(`/forum/${postId}`))
+    addComment(newComment, syncComments)
+    .then(() => setShowModal(false))
+
 
 }
 
@@ -41,14 +55,14 @@ useEffect(() => {
     });
 }, [postId]);
 
+
+
 return (
     <>
+    { showModal ?
     <form>
             <div  className="form__inputs">
                 <fieldset>
-                <h4><span className="forumPost__title">
-                    Add a comment on: {forumPost.title}
-                </span></h4>
                     <div  className="comment__input">
                         <label htmlFor="contents" className="comment__input__label" >comment:</label>
                         <input type="text" className="comment__input__field" id="content" ref={content} /> 
@@ -58,13 +72,15 @@ return (
                 <div className="form__input__crud__btn">
                     <button type="button" className="big__btn" id="big__btn"
                         onClick={handleClickSaveComment}>
-                        Submit
+                        add comment
                     </button>
                 </div>
                 </section>
                 
             </div>
         </form>
+        : null 
+    }
 
 
     </>

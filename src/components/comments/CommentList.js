@@ -3,6 +3,8 @@ import { useNavigate, useParams, Navigate} from "react-router-dom"
 import { deleteComment, getAllComments, getCommentByPost } from "../modules/CommentManager";
 import { Comments } from './Comment';
 import "./Comment.css"
+import { CommentForm } from './CommentForm';
+
 
 export const CommentList = () => {
     const { postId } = useParams()
@@ -11,33 +13,17 @@ export const CommentList = () => {
     const sessionUserId = sessionUser.id
 
     const [postComments, setComments] = useState([]);
+    const [showModal, setShowModal] = useState(false)
 
-    // const getAllComments = () => {
-    //     return getCommentByPost(postId).then(commentsFromAPI => {
-    //       setComments(commentsFromAPI)
-    //     });
-    //   };
-
-    //   useEffect(() => {
-    //     getCommentByPost(postId).then(setComments)
-    // }, [postId])
-
-    //   const handleDeleteComment = (id) => {
-    //     deleteComment(id)
-    //     .then(() => getCommentByPost().then(setComments));
-    // };
-
-    // useEffect(() => {
-    //     getCommentByPost(postId).then(setComments)
-    // }, [])
-
+    const openModal = () => {
+        setShowModal(prev => !prev)
+    }
 
     const getComments = () => {
         // After the data comes back from the API, we
         //  use the setAnimals function to update state
         return getCommentByPost(+postId).then(commentsFromAPI => {
           setComments(commentsFromAPI)
-          console.log(postComments)
         });
       };
 
@@ -56,6 +42,7 @@ export const CommentList = () => {
       useEffect(() => {
         getCommentByPost(+postId).then(setComments)
     }, [])
+
     
 
 
@@ -64,7 +51,8 @@ export const CommentList = () => {
         <div className="add__comment">
             <section className="make__post">
                 <div className="comment__btns">
-                    <button type="button" className="comment__btn btn" id="comment__btn" onClick={() => {navigate(`/forum/subforum/addComment/${postId}`)}} ><small>add a comment</small></button>
+                    <button type="button" className="comment__btn btn" id="comment__btn" onClick={openModal}><small>add a comment</small></button>
+                    <CommentForm showModal={showModal} setShowModal={setShowModal}/>
                 </div>
             </section>
             </div>
