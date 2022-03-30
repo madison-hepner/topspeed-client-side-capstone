@@ -1,0 +1,23 @@
+.login__title {
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    color: maroon;
+    padding: .5em;
+}
+
+.home__spacer {
+    background-color: black;
+      width: auto;
+      height:15px;
+      box-shadow: 5px 5px 10px darkgray;
+  }
+
+
+  .sign__in {
+      padding-top: 1em;
+  }
+
+  .link--register {
+      padding-top: .5em;
+  }
+  

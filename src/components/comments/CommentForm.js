@@ -22,18 +22,6 @@ export const CommentForm = ({showModal, setShowModal}) => {
     })
     const [forumPost, setPost] = useState({})
 
-    const getComments = () => {
-        // After the data comes back from the API, we
-        //  use the setAnimals function to update state
-        return getCommentByPost(+postId).then(commentsFromAPI => {
-          setComment(commentsFromAPI)
-          console.log(postComment)
-        });
-      };
-
-      const syncComments = () => {
-        getComments()
-      }
 
 
 
@@ -41,7 +29,7 @@ const handleClickSaveComment = (event) => {
     event.preventDefault() //Prevents the browser from submitting the form
     const newComment = {...postComment}
     newComment.content = content.current.value
-    addComment(newComment, syncComments)
+    addComment(newComment)
     .then(() => setShowModal(false))
 
 
@@ -56,15 +44,27 @@ useEffect(() => {
 }, [postId]);
 
 
+const getComments = () => {
+    // After the data comes back from the API, we
+    //  use the setAnimals function to update state
+    return getCommentByPost(+postId).then(commentsFromAPI => {
+      setComment(commentsFromAPI)
+      console.log(postComment)
+    });
+  };
+
+  const syncComments = () => {
+    getComments()
+  }
+
 
 return (
     <>
     { showModal ?
     <form>
-            <div  className="form__inputs">
+            <div  className="comment__form__inputs">
                 <fieldset>
                     <div  className="comment__input">
-                        <label htmlFor="contents" className="comment__input__label" >comment:</label>
                         <input type="text" className="comment__input__field" id="content" ref={content} /> 
                     </div>
                 </fieldset>
@@ -72,7 +72,7 @@ return (
                 <div className="form__input__crud__btn">
                     <button type="button" className="big__btn" id="big__btn"
                         onClick={handleClickSaveComment}>
-                        add comment
+                        <small>add comment</small>
                     </button>
                 </div>
                 </section>

@@ -45,8 +45,9 @@ import "./Login.css"
                 </dialog>
                 <section>
                     <form className="form--login" onSubmit={handleLogin}>
-                        <h1>TopSpeed</h1>
-                        <h2>Please sign in</h2>
+                        <h1 className="login__title">TopSpeed</h1>
+                        <div className="home__spacer"></div>
+                        <h4 className="sign__in">Please sign in...</h4>
                         <fieldset>
                             <label htmlFor="inputEmail"> Email address </label>
                             <input type="email"
@@ -58,8 +59,8 @@ import "./Login.css"
                                 onChange={handleInputChange} />
                         </fieldset>
                         <fieldset>
-                            <button type="submit" className="main__submit__btn">
-                                Sign in
+                            <button type="submit" className="main__login__btn">
+                                sign in
                             </button>
                         </fieldset>
                     </form>
