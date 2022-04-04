@@ -271,20 +271,6 @@
       "id": 7
     },
     {
-      "userId": 1,
-      "content": "test2",
-      "postId": 1,
-      "date": "3/21/2022, 10:29:43 PM",
-      "id": 9
-    },
-    {
-      "userId": 1,
-      "content": "testing modal",
-      "postId": 11,
-      "date": "3/28/2022, 10:46:31 PM",
-      "id": 13
-    },
-    {
       "0": {
         "id": 3,
         "userId": 5,
