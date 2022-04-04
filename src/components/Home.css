@@ -51,8 +51,7 @@
 
 .article__box {
     width: auto;
-    height: 200px;
-    background-color: silver;
+    height: 100px;
 }
 
 .featured__articles {

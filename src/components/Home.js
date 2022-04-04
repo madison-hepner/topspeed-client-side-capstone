@@ -1,6 +1,7 @@
 import "./TopSpeed.css"
 import "./Home.css"
 import { ArticleList } from "./articles/ArticleList"
+import { CarCardList } from "./carcards/HomeCardList"
 
 export const Home = () => {
     return (
@@ -16,10 +17,9 @@ export const Home = () => {
          <p className="about__text">Top Speed is a car froum that aims to make a place for car enthusiasts to discuss their projects, ask their questions, and connect with others of same interest. Browse the general forum to see all posts made, and browse individual forums to be make-specific. Enjoy! </p>
         <div className="about__spacer"></div>
         <div className="header__spacer"></div>
+        
+        <CarCardList />
 
-        <div className="article__box">
-        //NEWS SPOTLIGHT PLACEHOLDER
-        </div>
         <div className="header__spacer"></div>
         </section>
 

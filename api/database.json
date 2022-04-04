@@ -84,37 +84,46 @@
   "carTypes": [
     {
       "id": 1,
-      "name": "Porsche"
+      "name": "Porsche",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/porsche-gt3-teaser-1612817956.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
     },
     {
       "id": 2,
-      "name": "Nissan"
+      "name": "Nissan",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/porsche-gt3-teaser-1612817956.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
     },
     {
       "id": 3,
-      "name": "BMW"
+      "name": "BMW",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/porsche-gt3-teaser-1612817956.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
     },
     {
       "id": 4,
-      "name": "Audi"
+      "name": "Audi",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/porsche-gt3-teaser-1612817956.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
     },
     {
       "id": 5,
-      "name": "Mercedes"
+      "name": "Mercedes",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/porsche-gt3-teaser-1612817956.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
     },
     {
       "id": 6,
-      "name": "Toyota"
+      "name": "Toyota",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/porsche-gt3-teaser-1612817956.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
     },
     {
       "id": 7,
-      "name": "Honda"
+      "name": "Honda",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/porsche-gt3-teaser-1612817956.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
     },
     {
       "id": 8,
-      "name": "Ford"
+      "name": "Ford",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/porsche-gt3-teaser-1612817956.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
     }
   ],
+
   "forumPosts": [
     {
       "id": 1,
@@ -210,7 +219,7 @@
       "id": 11,
       "userId": 1,
       "title": "Lift Assist 2020 911 992",
-      "carTypeId": 1,
+      "carTypeId": "1",
       "model": "911 992",
       "content": "I have a 2020 911 992 and it is equipped with Lift assist. The only way I can operate this feature is manually. is there a way for me to store/save the locations I use the lift assist in my vehicle?  I have seen that Porsche Tycoon has a place in the CAR setting to save locations. I can't find this on my 992!!",
       "date": "3/14/2022, 3:44:53 AM",

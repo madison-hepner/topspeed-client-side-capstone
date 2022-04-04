@@ -1,0 +1,36 @@
+.car__img {
+    display: block;
+    height: 130px;
+    width: 180px;
+}
+
+.car__cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: none;
+    background-color: black;
+    width: auto;
+}
+
+.car__container {
+        position: relative;
+        width: 100%;
+}
+
+.car__card {
+    background-color: black;
+    padding: none;
+    justify-content: space-evenly;
+        border: 1px solid black;
+        height: 150px;
+        width:180px;
+}
+
+.carType__name {
+    background-color: black;
+    justify-content: center;
+    font-family: 'Audiowide', cursive;
+    margin-top: -30px;
+    color: white;
+    opacity: 70%
+}
