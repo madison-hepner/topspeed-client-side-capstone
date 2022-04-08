@@ -1,6 +1,6 @@
 .background {
     width: auto;
-    height: 1000px;
+    height: 900px;
     background-color: white !important;
 }
 
@@ -53,6 +53,7 @@
     max-height: 65%;
  }
 
+
  .media__container {
      background-color: black;
     position: relative;
@@ -89,3 +90,5 @@
   overflow: scroll;
   transform: translateY(-20%);
 }
+
+

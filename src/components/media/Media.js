@@ -20,8 +20,8 @@ export const MediaCard = ({ media }) => {
             <img className="media__img" src={media.img} alt="media image" />
             </picture>
             <div className="media__overlay">
-                    <p>{media.caption}</p>
-                    <p><strong>Posted by:</strong>{media?.user.name}</p>
+                    <p className="media__caption">{media.caption}</p>
+                    <p className="media__user"><strong>Posted by:</strong>{media?.user.name}</p>
             </div>
             </div>
             </div>
