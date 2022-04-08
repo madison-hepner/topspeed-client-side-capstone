@@ -4,6 +4,10 @@
     background-color: white !important;
 }
 
+.make__post {
+    padding-bottom: .5em;
+}
+
 .media__card__grow { 
     transition: all .09s ease-in-out; 
     background-color: black;
