@@ -10,6 +10,7 @@ import { SubForumList } from "./forum/porsche/SubForumList"
 import { AddForumPostForm } from "./forum/AddForumForm"
 import { CommentForm } from "./comments/CommentForm"
 import { PostEditForm } from "./forum/ForumEditForm"
+import { MediaList } from "./media/MediaList"
 
 
 
@@ -37,6 +38,13 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
             <Route exact path="/forum" element={
                 <PrivateRoute>
                     <ForumList />
+                </PrivateRoute>
+            } />
+
+
+            <Route exact path="/media" element={
+                <PrivateRoute>
+                    <MediaList />
                 </PrivateRoute>
             } />
 
