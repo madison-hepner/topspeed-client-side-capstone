@@ -84,35 +84,43 @@
   "carTypes": [
     {
       "id": 1,
-      "name": "Porsche"
+      "name": "Porsche",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/porsche-gt3-teaser-1612817956.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
     },
     {
       "id": 2,
-      "name": "Nissan"
+      "name": "Nissan",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/porsche-gt3-teaser-1612817956.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
     },
     {
       "id": 3,
-      "name": "BMW"
+      "name": "BMW",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/porsche-gt3-teaser-1612817956.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
     },
     {
       "id": 4,
-      "name": "Audi"
+      "name": "Audi",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/porsche-gt3-teaser-1612817956.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
     },
     {
       "id": 5,
-      "name": "Mercedes"
+      "name": "Mercedes",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/porsche-gt3-teaser-1612817956.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
     },
     {
       "id": 6,
-      "name": "Toyota"
+      "name": "Toyota",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/porsche-gt3-teaser-1612817956.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
     },
     {
       "id": 7,
-      "name": "Honda"
+      "name": "Honda",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/porsche-gt3-teaser-1612817956.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
     },
     {
       "id": 8,
-      "name": "Ford"
+      "name": "Ford",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/porsche-gt3-teaser-1612817956.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
     }
   ],
   "forumPosts": [
@@ -210,7 +218,7 @@
       "id": 11,
       "userId": 1,
       "title": "Lift Assist 2020 911 992",
-      "carTypeId": 1,
+      "carTypeId": "1",
       "model": "911 992",
       "content": "I have a 2020 911 992 and it is equipped with Lift assist. The only way I can operate this feature is manually. is there a way for me to store/save the locations I use the lift assist in my vehicle?  I have seen that Porsche Tycoon has a place in the CAR setting to save locations. I can't find this on my 992!!",
       "date": "3/14/2022, 3:44:53 AM",
@@ -224,6 +232,36 @@
       "model": "mkv supra",
       "content": "engine says bmw in my mkv surpra.. which one is it?",
       "date": "3/14/2022, 10:34:11 PM",
+      "commentId": 0
+    },
+    {
+      "id": 13,
+      "userId": 4,
+      "title": "350z motor mounts dimensions",
+      "carTypeId": 2,
+      "model": "350z",
+      "content": "Does anyone have dimensions of motor mounts? Im looking for approximate diameter and as close to exact legth as possible. If someone has solid mounts or oem mounts that arent installed, please measure them, if you have calipers to measure that would be best.",
+      "date": "4/4/2022, 5:55:23 PM",
+      "commentId": 0
+    },
+    {
+      "id": 14,
+      "userId": 2,
+      "title": "RH9 R33 Restoration",
+      "carTypeId": 2,
+      "model": "GTR",
+      "content": "Getting the R33 back to its former glory! Beaten down by rock chips and the back roads of Japan we are giving this Skyline the love it needs. This isn't the beginning or end of this project but I hope you guys enjoy seeing this beast come back to life.",
+      "date": "4/4/2022, 5:55:50 PM",
+      "commentId": 0
+    },
+    {
+      "id": 15,
+      "userId": 3,
+      "title": "Manual Resale Higher than DCT?",
+      "carTypeId": 3,
+      "model": "M3",
+      "content": "I'm shopping E9x. Debating between manual vs. DCT. I've owned them both. And love them both.  I'm not looking to talk DCT vs. Manual. Plenty of threads on that already.  This is strictly resale value.  On one hand, manual 911's, F cars, and R8's have shot up. So M3 could follow suit.  Although the next gen may actually prefer a DCT.  My gut says manual.  However the car I want to buy is a DCT lol. So hoping it retains its value.",
+      "date": "4/4/2022, 5:57:51 PM",
       "commentId": 0
     }
   ],
@@ -264,18 +302,329 @@
       "id": 6
     },
     {
-      "userId": 1,
-      "content": "testing new comment",
-      "postId": 16,
-      "date": "3/19/2022, 1:58:39 PM",
-      "id": 7
+      "0": {
+        "id": 3,
+        "userId": 5,
+        "content": "That feature is optional - front axle lift system adds GPS capability so that it can remember to automatically lift the nose at certain programmable locations. See if that was included in the package of your car. Otherwise, may be out of luck in getting it to do it automatically.",
+        "postId": 11,
+        "date": "3/14/2022, 3:47:53 AM",
+        "user": {
+          "id": 5,
+          "name": "Collin",
+          "email": "Collin@me.com",
+          "password": "supra"
+        }
+      },
+      "1": {
+        "id": 4,
+        "userId": 2,
+        "content": "I'm told the GPS assisted is on the 21 builds (to be confrimed). I cant find any info also.",
+        "postId": 11,
+        "date": "3/14/2022, 3:47:53 AM",
+        "user": {
+          "id": 2,
+          "name": "Brian",
+          "email": "Brian@me.com",
+          "password": "nissan370z"
+        }
+      },
+      "2": {
+        "userId": 1,
+        "content": "testing modal",
+        "postId": 11,
+        "date": "3/28/2022, 10:46:31 PM",
+        "id": 13,
+        "user": {
+          "id": 1,
+          "name": "Madison",
+          "email": "Madison@me.com",
+          "password": "porsche911"
+        }
+      },
+      "3": {
+        "userId": 1,
+        "content": "test",
+        "postId": 11,
+        "date": "3/28/2022, 10:53:34 PM",
+        "id": 14,
+        "user": {
+          "id": 1,
+          "name": "Madison",
+          "email": "Madison@me.com",
+          "password": "porsche911"
+        }
+      },
+      "4": {
+        "userId": 1,
+        "content": "test2",
+        "postId": 11,
+        "date": "3/28/2022, 11:08:08 PM",
+        "id": 15,
+        "user": {
+          "id": 1,
+          "name": "Madison",
+          "email": "Madison@me.com",
+          "password": "porsche911"
+        }
+      },
+      "5": {
+        "userId": 1,
+        "content": "test1",
+        "postId": 11,
+        "date": "3/28/2022, 11:12:24 PM",
+        "id": 16,
+        "user": {
+          "id": 1,
+          "name": "Madison",
+          "email": "Madison@me.com",
+          "password": "porsche911"
+        }
+      },
+      "content": "test1",
+      "id": 16
+    },
+    {
+      "0": {
+        "id": 3,
+        "userId": 5,
+        "content": "That feature is optional - front axle lift system adds GPS capability so that it can remember to automatically lift the nose at certain programmable locations. See if that was included in the package of your car. Otherwise, may be out of luck in getting it to do it automatically.",
+        "postId": 11,
+        "date": "3/14/2022, 3:47:53 AM",
+        "user": {
+          "id": 5,
+          "name": "Collin",
+          "email": "Collin@me.com",
+          "password": "supra"
+        }
+      },
+      "1": {
+        "id": 4,
+        "userId": 2,
+        "content": "I'm told the GPS assisted is on the 21 builds (to be confrimed). I cant find any info also.",
+        "postId": 11,
+        "date": "3/14/2022, 3:47:53 AM",
+        "user": {
+          "id": 2,
+          "name": "Brian",
+          "email": "Brian@me.com",
+          "password": "nissan370z"
+        }
+      },
+      "2": {
+        "userId": 1,
+        "content": "testing modal",
+        "postId": 11,
+        "date": "3/28/2022, 10:46:31 PM",
+        "id": 13,
+        "user": {
+          "id": 1,
+          "name": "Madison",
+          "email": "Madison@me.com",
+          "password": "porsche911"
+        }
+      },
+      "3": {
+        "userId": 1,
+        "content": "test",
+        "postId": 11,
+        "date": "3/28/2022, 10:53:34 PM",
+        "id": 14,
+        "user": {
+          "id": 1,
+          "name": "Madison",
+          "email": "Madison@me.com",
+          "password": "porsche911"
+        }
+      },
+      "4": {
+        "userId": 1,
+        "content": "test1",
+        "postId": 11,
+        "date": "3/28/2022, 11:33:11 PM",
+        "id": 17,
+        "user": {
+          "id": 1,
+          "name": "Madison",
+          "email": "Madison@me.com",
+          "password": "porsche911"
+        }
+      },
+      "content": "test2",
+      "id": 17
+    },
+    {
+      "0": {
+        "id": 3,
+        "userId": 5,
+        "content": "That feature is optional - front axle lift system adds GPS capability so that it can remember to automatically lift the nose at certain programmable locations. See if that was included in the package of your car. Otherwise, may be out of luck in getting it to do it automatically.",
+        "postId": 11,
+        "date": "3/14/2022, 3:47:53 AM",
+        "user": {
+          "id": 5,
+          "name": "Collin",
+          "email": "Collin@me.com",
+          "password": "supra"
+        }
+      },
+      "1": {
+        "id": 4,
+        "userId": 2,
+        "content": "I'm told the GPS assisted is on the 21 builds (to be confrimed). I cant find any info also.",
+        "postId": 11,
+        "date": "3/14/2022, 3:47:53 AM",
+        "user": {
+          "id": 2,
+          "name": "Brian",
+          "email": "Brian@me.com",
+          "password": "nissan370z"
+        }
+      },
+      "2": {
+        "userId": 1,
+        "content": "testing modal",
+        "postId": 11,
+        "date": "3/28/2022, 10:46:31 PM",
+        "id": 13,
+        "user": {
+          "id": 1,
+          "name": "Madison",
+          "email": "Madison@me.com",
+          "password": "porsche911"
+        }
+      },
+      "3": {
+        "userId": 1,
+        "content": "test",
+        "postId": 11,
+        "date": "3/28/2022, 10:53:34 PM",
+        "id": 14,
+        "user": {
+          "id": 1,
+          "name": "Madison",
+          "email": "Madison@me.com",
+          "password": "porsche911"
+        }
+      },
+      "content": "test1",
+      "id": 18
+    },
+    {
+      "0": {
+        "id": 3,
+        "userId": 5,
+        "content": "That feature is optional - front axle lift system adds GPS capability so that it can remember to automatically lift the nose at certain programmable locations. See if that was included in the package of your car. Otherwise, may be out of luck in getting it to do it automatically.",
+        "postId": 11,
+        "date": "3/14/2022, 3:47:53 AM",
+        "user": {
+          "id": 5,
+          "name": "Collin",
+          "email": "Collin@me.com",
+          "password": "supra"
+        }
+      },
+      "1": {
+        "id": 4,
+        "userId": 2,
+        "content": "I'm told the GPS assisted is on the 21 builds (to be confrimed). I cant find any info also.",
+        "postId": 11,
+        "date": "3/14/2022, 3:47:53 AM",
+        "user": {
+          "id": 2,
+          "name": "Brian",
+          "email": "Brian@me.com",
+          "password": "nissan370z"
+        }
+      },
+      "2": {
+        "userId": 1,
+        "content": "testing modal",
+        "postId": 11,
+        "date": "3/28/2022, 10:46:31 PM",
+        "id": 13,
+        "user": {
+          "id": 1,
+          "name": "Madison",
+          "email": "Madison@me.com",
+          "password": "porsche911"
+        }
+      },
+      "3": {
+        "userId": 1,
+        "content": "test",
+        "postId": 11,
+        "date": "3/28/2022, 10:53:34 PM",
+        "id": 14,
+        "user": {
+          "id": 1,
+          "name": "Madison",
+          "email": "Madison@me.com",
+          "password": "porsche911"
+        }
+      },
+      "4": {
+        "userId": 1,
+        "content": "test2",
+        "postId": 11,
+        "date": "3/28/2022, 11:44:23 PM",
+        "id": 19,
+        "user": {
+          "id": 1,
+          "name": "Madison",
+          "email": "Madison@me.com",
+          "password": "porsche911"
+        }
+      }
     },
     {
       "userId": 1,
-      "content": "test2",
-      "postId": 1,
-      "date": "3/21/2022, 10:29:43 PM",
-      "id": 9
+      "content": "what is hapenningf",
+      "postId": 15,
+      "date": "4/7/2022, 9:36:29 PM",
+      "id": 19
+    }
+  ],
+  "media": [
+    {
+      "id": 1,
+      "userId": 1,
+      "img": "https://presskit.porsche.de/models/assets/images/9/29R4205-f5f8fec9.jpg",
+      "caption": "new 2022 porsche gt3",
+      "date": "4/4/2022, 5:57:51 PM"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "img": "https://www.carscoops.com/wp-content/uploads/webp/2019/09/74353ec8-2020-bmw-840i-gran-coupe%CC%81-euro-spec-0.webp",
+      "caption": "bmw 840i",
+      "date": "4/4/2022, 5:57:51 PM"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "img": "https://www.gtrblog.com/wp-content/uploads/2021/07/210213-01_001-source-scaled.jpg",
+      "caption": "gtr",
+      "date": "4/4/2022, 5:57:51 PM"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "img": "https://www.gtrblog.com/wp-content/uploads/2021/07/210213-01_001-source-scaled.jpg",
+      "caption": "testing image uplaod",
+      "date": "4/7/2022, 11:11:08 PM"
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "img": "https://presskit.porsche.de/models/assets/images/9/29R4205-f5f8fec9.jpg",
+      "caption": "testing image uplaod 2",
+      "date": "4/7/2022, 11:11:27 PM"
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "img": "https://presskit.porsche.de/models/assets/images/9/29R4205-f5f8fec9.jpg",
+      "caption": "testing image uplaod 3",
+      "date": "4/7/2022, 11:11:57 PM"
     }
   ]
 }

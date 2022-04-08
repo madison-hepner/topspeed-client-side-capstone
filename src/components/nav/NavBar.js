@@ -5,11 +5,14 @@ import './NavBar.css'
 
 export const NavBar = ({ clearUser, isAuthenticated }) => {
   const history = useNavigate()
+  
 
   const handleLogout = () => {
       clearUser();
       history('/');
+
   }
+
 
   return (
     <nav className="navbar">
@@ -40,7 +43,7 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
             : null}
           {isAuthenticated 
             ? <li className="nav-item">
-              <Link className="nav-link" to="/">MEDIA</Link>
+              <Link className="nav-link" to="/media">MEDIA</Link>
             </li>
             : null}
           {isAuthenticated
@@ -48,11 +51,11 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
               <Link className="nav-link" to="/">SEARCH</Link>
             </li>
             : null}
-          {isAuthenticated
+          {/* {isAuthenticated
             ? <li className="nav-item">
               <Link className="nav-link" to="/">WELCOME,</Link>
             </li>
-            : null}
+            : null} */}
           {isAuthenticated 
             ? 
             <div className="navbar__logout">

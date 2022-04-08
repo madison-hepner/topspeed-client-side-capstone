@@ -17,6 +17,20 @@
     font-size: 16pt;
 }
 
+.comment__input__field {
+    display: flex;
+    align-content: center;
+    border: 1px solid black;
+    min-height: 80px;
+    width: 400px;
+    border-radius: .6em;
+}
+
+.comment__form__inputs {
+    display: flex;
+    justify-content: center;
+}
+
 .date__space {
     display: flex;
     margin-left: auto;
