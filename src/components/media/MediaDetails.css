@@ -1,0 +1,91 @@
+.media__details__section {
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 900px;
+    height: 700px;
+    background-color: black !important;
+}
+
+
+.media__details__btns__section {
+    margin-bottom: -15%;
+    margin-left: -3.6em;
+    background-color: black !important;
+    color: white;
+    border: none;
+    padding-left: 21.2em;
+    font-family: 'Audiowide', cursive;
+    margin-top: 10%;
+    font-size: 18pt;
+
+}
+
+.media__detail__card {
+    width: 600px;
+    height: auto;
+    background-color: black!important;
+    border: 1px solid white;
+
+}
+.media__details {
+    background-color: black !important;
+    height: 800px;
+    
+}
+
+.media__details__img {
+    display: block;
+    width: 100%;
+    min-height: 85%;
+    max-height: 85%;
+ }
+
+ .media__delete {
+    padding-top: .09em;
+    font-size: 10pt;
+    padding-left:6em;
+    border: none;
+    background-color: black;
+    width: 100px;
+    font-family: 'Audiowide', cursive;
+}
+
+.media__det__btns__btn {
+    background-color: none;
+    color: black;
+    font-family: 'Audiowide', cursive;
+    width: 100px;
+}
+
+  
+  .media__det__btns {
+    padding: .2em;
+    background-color: black !important;
+    border: none;
+    color: maroon;
+    font-family: 'Audiowide', cursive;
+    padding-top: .09em;
+    height: auto;
+    width: 100px;
+    font-family: 'Audiowide', cursive;
+  }
+  
+  .media__det__btns:hover {
+    background-color: black !important;
+    border-bottom: 1px solid white;
+    color: maroon;
+    font-family: 'Audiowide', cursive;
+    color: maroon !important;
+    height: auto;
+    width: 100px;
+  }
+  
+  .media__det__btns:focus {
+    background-color:black !important;
+    border-bottom: 1px solid white;
+    font-family: 'Audiowide', cursive;
+    color: maroon;
+    height: auto;
+    width: 100px;
+  }
