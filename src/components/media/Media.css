@@ -8,6 +8,58 @@
     padding-bottom: .5em;
 }
 
+.media__container {
+    background-color: black !important;
+}
+
+.media__delete {
+    padding-top: .09em;
+    font-size: 10pt;
+    padding-left:6em;
+    border: none;
+    background-color: black;
+    width: 100px;
+}
+
+.media__delete__btns__btn {
+    background-color: none;
+    color: black;
+    width: 100px;
+}
+
+  
+  .media__delete__btns {
+    padding: .2em;
+    background-color: black !important;
+    border: none;
+    color: maroon;
+    font-family: 'Audiowide', cursive;
+    padding-top: .09em;
+    height: auto;
+    width: 100px;
+  }
+  
+  .media__delete__btns:hover {
+    background-color: black !important;
+    border-bottom: 1px solid white;
+    color: maroon;
+    font-family: 'Audiowide', cursive;
+    color: maroon !important;
+    height: auto;
+    width: 100px;
+  }
+  
+  .media__delete__btns:focus {
+    background-color:black !important;
+    border-bottom: 1px solid white;
+    font-family: 'Audiowide', cursive;
+    color: maroon;
+    height: auto;
+    width: 100px;
+  }
+
+
+
 .media__card__grow { 
     transition: all .09s ease-in-out; 
     background-color: black;

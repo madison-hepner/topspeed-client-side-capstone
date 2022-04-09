@@ -59,17 +59,17 @@
 }
 
   
-  #delete__btn {
+.delete__btn {
     padding: .2em;
     background-color: white;
-    color: maroon;
+    color: maroon !important;
     font-family: 'Audiowide', cursive;
     padding-top: .09em;
     height: auto;
     width: auto;
   }
   
-  #delete__btn:hover {
+.delete__btn:hover {
     background-color: white;
     border-bottom: 2px solid black;
     color: maroon;
@@ -79,7 +79,7 @@
     width: auto;
   }
   
-  #delete__btn:focus {
+.delete__btn:focus {
     background-color: white;
     border-bottom: 2px solid black;
     font-family: 'Audiowide', cursive;
